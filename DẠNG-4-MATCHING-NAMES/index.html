@@ -1,0 +1,557 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luyện tập IELTS Reading — Dạng 3: Matching Names</title>
+<style>
+:root{font-family:'Times New Roman','Liberation Serif',serif;}
+*{box-sizing:border-box;}
+body{margin:0;background:#f6f1e7;color:#2b2b2b;line-height:1.7;}
+header.top{background:#7a1f1f;color:#fff;padding:22px 18px;text-align:center;}
+header.top h1{margin:0 0 6px;font-size:28px;}
+header.top p{margin:0;opacity:.92;}
+nav.exnav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:2px solid #7a1f1f;padding:8px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+nav.exnav a,nav.exnav button{font-family:inherit;font-size:15px;text-decoration:none;color:#7a1f1f;border:1px solid #7a1f1f;border-radius:20px;padding:6px 14px;background:#fff;cursor:pointer;}
+nav.exnav a:hover,nav.exnav button:hover{background:#7a1f1f;color:#fff;}
+main{max-width:1180px;margin:0 auto;padding:18px 14px 60px;}
+.card{background:#fff;border:1px solid #d9cfae;border-radius:10px;padding:20px 22px;margin:18px 0;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+.card h2{color:#7a1f1f;margin-top:0;border-bottom:2px solid #e4d9bd;padding-bottom:8px;}
+h3{color:#7a1f1f;}
+.muted{color:#8a7a5c;font-size:14px;}
+.split{display:flex;gap:16px;align-items:stretch;}
+.panel{flex:1 1 0;border:1px solid #d9cfae;border-radius:8px;background:#fffdf6;min-width:0;}
+.panel .phead{background:#7a1f1f;color:#fff;font-weight:bold;padding:8px 12px;border-radius:7px 7px 0 0;}
+.panel .pbody{padding:12px 14px;max-height:62vh;overflow-y:auto;}
+.panel .pbody p{margin:0 0 12px;text-align:justify;}
+.qcard{border:1px solid #e0d4b3;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:#fff;}
+.qcard .stem{font-weight:bold;margin-bottom:8px;}
+.opt{display:block;padding:7px 10px;border:1px solid #e6dcc0;border-radius:6px;margin:5px 0;cursor:pointer;}
+.opt:hover{background:#faf3df;}
+.opt input{margin-right:8px;}
+.actions{margin:14px 0;display:flex;gap:10px;flex-wrap:wrap;}
+button.btn{font-family:inherit;font-size:16px;padding:9px 22px;border-radius:8px;border:none;cursor:pointer;}
+.btn-grade{background:#7a1f1f;color:#fff;}
+.btn-grade:hover{background:#5e1717;}
+.btn-reset{background:#fff;color:#7a1f1f;border:1px solid #7a1f1f !important;}
+.btn-all{background:#1f5c3d;color:#fff;}
+.review{margin-top:14px;border-top:2px dashed #c9b98f;padding-top:10px;}
+.rq{border:1px solid #e0d4b3;border-radius:8px;padding:12px 14px;margin:10px 0;background:#fffdf6;}
+.rq.correct{border-left:6px solid #1f7a3d;}
+.rq.wrong{border-left:6px solid #b3261e;}
+.rq .ansline{margin:6px 0;}
+.evidence{background:#f4eedd;border-left:4px solid #7a1f1f;padding:8px 12px;margin:8px 0;font-style:italic;}
+.explain{margin:6px 0;}
+.paralist{margin:6px 0 0 18px;padding:0;}
+.paralist li{margin:3px 0;}
+.score{font-size:20px;font-weight:bold;color:#7a1f1f;}
+.totalscore{font-size:22px;font-weight:bold;color:#1f5c3d;text-align:center;padding:12px;}
+.screen{display:none;}
+.screen.active{display:block;}
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:6px 0 4px;}
+.excard{font-family:inherit;text-align:left;background:#fff;border:2px solid #d9cfae;border-radius:10px;padding:16px 18px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.06);font-size:16px;color:#2b2b2b;}
+.excard:hover{border-color:#7a1f1f;background:#faf3df;}
+.excard h3{margin:0 0 6px;color:#7a1f1f;font-size:18px;}
+.excard .meta{font-size:14px;color:#6a6a6a;}
+.excard .status{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:14px;font-size:14px;background:#eee5cd;color:#6b5a35;}
+.excard .status.doing{background:#b8860b;color:#fff;}
+.excard .status.done{background:#1f5c3d;color:#fff;}
+.backbtn{font-family:inherit;font-size:15px;background:#fff;color:#7a1f1f;border:1px solid #7a1f1f;border-radius:20px;padding:7px 18px;cursor:pointer;margin:4px 0 10px;}
+.backbtn:hover{background:#7a1f1f;color:#fff;}
+.studentform{background:#fff;border:2px solid #d9cfae;border-radius:10px;padding:14px 18px;margin:14px 0;}
+.studentform h3{margin:0 0 10px;color:#7a1f1f;font-size:17px;}
+.sfields{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;}
+.sfields label{font-size:14px;display:block;}
+.sfields input{font-family:inherit;font-size:16px;width:100%;padding:8px 10px;margin-top:4px;border:1px solid #c9bfa4;border-radius:6px;box-sizing:border-box;}
+.req{color:#b3261e;font-weight:bold;}
+.submitting{color:#6b5a35;font-weight:bold;margin:8px 0;}
+.submited{color:#1f5c3d;font-weight:bold;margin:8px 0;}
+.submitfail{color:#b3261e;font-weight:bold;margin:8px 0;}
+.submitwarn{color:#8a6d00;font-weight:bold;margin:8px 0;}
+.btn-resend{font-family:inherit;font-size:15px;background:#7a1f1f;color:#fff;border:none;border-radius:8px;padding:8px 18px;cursor:pointer;margin:6px 0;}
+.btn-resend:hover{background:#5c1717;}
+@media(max-width:720px){
+  .split{flex-direction:column;}
+  .panel .pbody{max-height:46vh;}
+  header.top h1{font-size:22px;}
+}
+</style></head><body>
+<header class="top"><h1>IELTS Reading — Dạng 3: MATCHING NAMES</h1><p>Luyện tập tương tác · Ví dụ minh họa + 5 bài tập · Nối tên với thông tin</p></header>
+<nav class="exnav"><button onclick="showScreen('hub')">🏠 Trang tổng</button></nav>
+<main>
+<div id="screen-hub" class="screen active">
+<section id="intro" class="card">
+<h2>Dạng 3. MATCHING NAMES — Nối tên</h2>
+<p>Dạng câu hỏi Matching Names thuộc nhóm câu hỏi khá dễ trong IELTS Reading. Nhiệm vụ của người đọc là <b>nối tên riêng với mẩu thông tin</b> liên quan sao cho trùng khớp với thông tin trong bài đọc.</p>
+<h3>Đặc điểm dạng bài</h3>
+<ul>
+<li>Cung cấp một <b>danh sách tên riêng</b>: có thể là tên người, tên địa danh, tên thuật ngữ chuyên ngành…</li>
+<li>Cung cấp một <b>danh sách các mẩu thông tin</b>: có thể là điều các chuyên gia nói, kết quả nghiên cứu, các vấn đề xảy ra ở một địa danh…</li>
+<li>Thường <b>số lượng tên riêng nhiều hơn hoặc ít hơn số lượng thông tin</b> → một cái tên có thể được sử dụng nhiều hơn 1 lần, hoặc có tên không được dùng với đáp án nào.</li>
+<li>Các tên riêng thường <b>xuất hiện theo thứ tự trong bài đọc, từ trên xuống dưới</b>.</li>
+</ul>
+<h3>Cách làm bài — 4 bước</h3>
+<ol>
+<li><b>Bước 1 — Scan toàn bộ bài đọc để tìm các tên riêng:</b> khoanh tròn các tên riêng tìm thấy để đánh dấu vị trí chứa thông tin trả lời; tên xuất hiện nhiều lần thì khoanh hết mọi vị trí. Tên riêng thường được viết hoa.</li>
+<li><b>Bước 2 — Gạch chân keywords loại 2 trong tất cả statements:</b> với dạng này không cần để ý từ nối loại 1 (bước 1 đã giúp tìm vị trí chứa thông tin). Trong khi gạch chân, ghi chú lại bên cạnh mỗi câu hỏi <b>nội dung chính (main idea)</b> theo cách diễn đạt của mình — tức là paraphrase lại một cách dễ hiểu hơn để dễ đối chiếu với đoạn văn.</li>
+<li><b>Bước 3 — Làm câu dễ trước, câu khó sau:</b> câu dễ là câu có tên chỉ xuất hiện <b>duy nhất 1 lần</b> trong bài (chỉ cần đọc 1 câu văn là ra đáp án); câu khó là câu có tên được nhắc nhiều lần (phải đọc nhiều câu văn). Làm câu dễ trước sẽ loại bớt lựa chọn cho các câu khó.</li>
+<li><b>Bước 4 — Đối chiếu thông tin rồi chốt đáp án:</b> đối chiếu từ vựng giữa câu hỏi và đoạn văn giúp chắc chắn đáp án đúng, đồng thời tích lũy thêm cách diễn đạt tương đồng cho Speaking và Writing. Thông thường mỗi tên riêng chỉ nối với một đáp án, nên hãy gạch đáp án đã chọn để loại bớt lựa chọn.</li>
+</ol>
+<h3>3 mẹo làm bài</h3>
+<ol>
+<li><b>Mẹo 1 — Khi tìm tên người, có thể chỉ tìm "surname" (tên họ):</b> bài đọc IELTS mang tính học thuật cao, tên được nhắc lại lần 2 thường chỉ còn họ (ví dụ đáp án "Robert Smith" → trong bài chỉ còn "Mr. Smith").</li>
+<li><b>Mẹo 2 — Đánh dấu các câu đã trả lời:</b> khi đã chốt 1 đáp án, hãy đánh dấu đáp án đã dùng để dễ loại trừ và tránh nhầm lẫn ở các câu sau.</li>
+<li><b>Mẹo 3 — Có những đáp án gây nhiễu:</b> phần lớn tên riêng chỉ được dùng một lần; có tên được dùng hai lần, nhưng cũng có tên không được dùng lần nào. Hãy đoán trước các tình huống và đọc kỹ hướng dẫn trong câu hỏi.</li>
+</ol>
+<p class="muted">Nội dung tóm tắt trung thực từ tài liệu "Dạng 3. DẠNG MATCHING NAMES" (IELTS Thanh Loan).</p>
+</section>
+<div id="studentform"></div><div class="card"><h2>Chọn bài để làm</h2><div class="hubgrid"><button class="excard" onclick="showScreen('example')"><h3>📖 Ví dụ minh họa: Chores for children</h3><div class="meta">4 câu hỏi · Đáp án mẫu + lập luận từng bước (không chấm điểm)</div><span class="status">Xem đáp án mẫu</span></button><button class="excard" onclick="showScreen('ex1')"><h3>Bài 1: Holidays with a difference</h3><div class="meta">5 câu hỏi · Nối tên với thông tin</div><span class="status" id="status-ex1">Chưa làm</span></button><button class="excard" onclick="showScreen('ex2')"><h3>Bài 2: What is multi-tasking?</h3><div class="meta">4 câu hỏi · Nối tên với thông tin</div><span class="status" id="status-ex2">Chưa làm</span></button><button class="excard" onclick="showScreen('ex3')"><h3>Bài 3: Out of Africa: solar energy from the Sahara</h3><div class="meta">4 câu hỏi · Nối tên với thông tin</div><span class="status" id="status-ex3">Chưa làm</span></button><button class="excard" onclick="showScreen('ex4')"><h3>Bài 4: The truth about lying</h3><div class="meta">4 câu hỏi · Nối tên với thông tin</div><span class="status" id="status-ex4">Chưa làm</span></button><button class="excard" onclick="showScreen('ex5')"><h3>Bài 5: Last man standing</h3><div class="meta">4 câu hỏi · Nối tên với thông tin</div><span class="status" id="status-ex5">Chưa làm</span></button></div><div class="actions"><button class="btn btn-all" onclick="gradeAll()">📝 Chấm tất cả</button><button class="btn btn-reset" onclick="resetAll()">🔄 Làm lại tất cả</button></div><div id="totalscore"></div></div></div>
+<div id="screen-example" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section class="card">
+<h2>📖 Ví dụ minh họa: Chores for children</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc</div><div class="pbody">
+<h3 style="margin-top:0">Chores for children</h3>
+<p>Assigning new jobs for children as they mature will develop their work ethic, says Gregg Murset, CEO of BusyKid, a chore and allowance tracking app. &quot;The most important thing is to challenge them,&quot; he says. &quot;Once they have some proficiency you need to make them stretch to do the next job.&quot; Mr. Murset, a father of six children ages 10 to 20, believes parents should teach children to do housework when they&#x27;re young, no matter if it yields imperfect results. &quot;Even though it&#x27;s easier to just clean the toilet by yourself and be done with it, you have to take the long view and realise that these fundamental life skills are so important,&quot; he says.</p>
+<p>Attaching an allowance to chores teaches children not to expect handouts, says Michael Eisenberg, a financial advisor and member of the National Financial Literacy Commission. &quot;At earlier ages, it instills within children the reality that you do something and you get paid for it,&quot; he says. &quot;Later on in life, they learn that the only way we get money is if we produce stuff at our jobs.&quot; Some 68% of U.S parents say they pay an allowance to their children, at an average rate of $67.80 per month, according to a 2016 survey of 1,005 adults. More than 80% of respondents who pay an allowance say they want to teach their child the value of money and financial responsibility, the survey found.</p>
+<p class="muted">Source: ielts-simon.com</p>
+</div></div>
+<div class="panel"><div class="phead">📋 Câu hỏi & đáp án mẫu</div><div class="pbody">
+<p><i>Match each of the following statements to one of the philosophers below</i></p><ul>
+<li>A Gregg Murset</li>
+<li>B Michael Eisenberg</li>
+<li>C most American parents</li>
+</ul><hr>
+<p><b>Bước 1 — Scan tên riêng:</b> có 3 cái tên nhưng 4 ý kiến → dự đoán sẽ có 1 cái tên được nối với 2 câu hỏi.</p>
+<p><b>Bước 2 — Gạch chân từ khóa loại 2</b> (không cần từ nối loại 1 vì bước 1 đã giúp tìm vị trí chứa thông tin):</p><ul>
+<li>Câu 1: &quot;don&#x27;t get something for nothing&quot; — cụm động từ chính trong câu → ý chính: <i>if do nothing, get nothing (không làm, không hưởng)</i></li>
+<li>Câu 2: &quot;tasks of increasing difficulty&quot; — cụm danh từ chính trong câu → ý chính: <i>tasks gradually more difficult (nhiệm vụ ngày càng khó)</i></li>
+<li>Câu 3: &quot;manage their money carefully&quot; — cụm động từ chính trong câu → ý chính: <i>spend money carefully (tiêu tiền cẩn thận)</i></li>
+<li>Câu 4: &quot;future benefits of giving chores&quot; — cụm danh từ chính trong câu → ý chính: <i>advantages of giving chores in the future (mặt lợi của việc cho con làm việc nhà)</i></li>
+</ul><hr>
+<p><b>Bước 3+4 — Đọc câu dễ trước (tên xuất hiện 1 lần), đối chiếu từ vựng để chốt đáp án:</b></p>
+<div class="rq">
+<div class="stem"><b>Câu 1.</b> Children should learn that you don&#x27;t get something for nothing. → Đáp án: <b>B Michael Eisenberg</b></div>
+<div class="explain"><i>Đọc ông Michael Eisenberg trước vì tên ông chỉ xuất hiện 1 lần trong bài.</i></div>
+<div><b>Đối chiếu từ vựng:</b><ul class="paralist">
+<li>Bài đọc: “not to expect handouts” <i>(không trông chờ vào những thứ bố thí — nghĩa là phải làm việc mới nhận được tiền)</i></li>
+<li>Câu hỏi: “not get something for nothing” <i>(sẽ không nhận được gì nếu không làm gì)</i></li>
+</ul></div></div>
+<div class="rq">
+<div class="stem"><b>Câu 2.</b> Parents should give their children tasks of increasing difficulty. → Đáp án: <b>A Gregg Murset</b></div>
+<div class="explain"><i>Đọc Gregg Murset sau cùng vì tên ông xuất hiện hai lần (câu khó).</i></div>
+<div><b>Đối chiếu từ vựng:</b><ul class="paralist">
+<li>Bài đọc: “to challenge them / to make them stretch to do the next job” <i>(phải thử thách chúng khi làm những công việc tiếp theo)</i></li>
+<li>Câu hỏi: “to give tasks of increasing difficulty” <i>(giao cho nhiệm vụ với độ khó tăng lên)</i></li>
+</ul></div></div>
+<div class="rq">
+<div class="stem"><b>Câu 3.</b> Children should learn to manage their money carefully. → Đáp án: <b>C most American parents</b></div>
+<div class="explain"><i>Đọc thông tin về &quot;most American parents&quot; vì cũng chỉ xuất hiện 1 lần.</i></div>
+<div><b>Đối chiếu từ vựng:</b><ul class="paralist">
+<li>Bài đọc: “financial responsibility” <i>(phải có trách nhiệm với tiền của mình — hay nói cách khác là phải biết cách tiêu tiền hợp lý)</i></li>
+<li>Câu hỏi: “manage money carefully” <i>(biết cách quản lý tiền một cách cẩn thận)</i></li>
+</ul></div></div>
+<div class="rq">
+<div class="stem"><b>Câu 4.</b> Parents should think about the future benefits of giving chores to their children. → Đáp án: <b>A Gregg Murset</b></div>
+<div class="explain"><i>Tiếp tục đọc thông tin về Gregg Murset (đoạn 2 của ông).</i></div>
+<div><b>Đối chiếu từ vựng:</b><ul class="paralist">
+<li>Bài đọc: “have to take the long view and realise these fundamental life skills are so important” <i>(phải có cái nhìn xa trông rộng và nhận ra rằng những kĩ năng nền tảng này là rất quan trọng)</i></li>
+<li>Câu hỏi: “future benefits of giving chores” <i>(những lợi ích trong tương lai của việc giao việc nhà cho trẻ con)</i></li>
+</ul></div></div>
+<p class="muted"><b>Note (theo tài liệu):</b> nên làm bước 3 và bước 4 song song để tiết kiệm thời gian và giữ mạch bài đọc; với dạng này mỗi câu chỉ cần đọc 1 mẩu thông tin ngắn quanh tên riêng — đây là dạng dễ, không nên mất điểm.</p>
+</div></div>
+</div></section></div>
+<div id="screen-ex1" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex1" class="card">
+<h2>Exercise 1: Holidays with a difference</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Holidays with a difference</h3>
+<p><i>Tribal tourism is becoming more popular. But at what cost to the locals?</i></p>
+<p>Tribal tourism is a relatively new type of tourism. It involves travellers going to remote destinations, staying with local people and learning about their culture and way of life. They stay in local accommodation, share facilities with local people, and join in with meals and celebrations. At the moment, less than one percent of holidays are tribal tourism holidays, but this is set to change.</p>
+<p>Tribal tourism is often compared with foreign exchange visits. However, a foreign exchange involves staying with people who often share the same values. Tribal tourism takes visitors to places where the lifestyle is very different from that in their home location. Those who have been on a tribal holiday explain that experiencing this lifestyle is the main attraction. They say that it offers them the chance to live in a way they never have before.</p>
+<p>Not everyone is convinced that tribal tourism is a good thing, and opinions are divided. The argument is about whether or not it helps the local population, or whether it exploits them. The main problem is that, because tribal tourism is relatively new, the long-term effects on local populations have not been studied in much detail. Where studies have been carried out, the effects have been found to be negative.</p>
+<p>Travel writer Ian Coleman recalls a recent trip to Guatemala, where he saw an example of this. &quot;There is a village with a statue of a man called Maximon, who has a special spiritual meaning for the local tribe&quot;, he explains. &quot;The statue kept indoors, and once a year the locals bring him out and carry him around the village. However, visitors now pay money for them to bring the statue out and carry it around, while they take photographs. As a result, Maximon has lost his original meaning, and is now just another tourist attraction.&quot;</p>
+<p>So, is it possible to experience an exotic culture without harming it in some way? &quot;With a bit of thought, we can maximize the positive impacts and minimize the negative,&quot; says travel company director Hilary Waterhouse. &quot;Remember that you are there not only to experience a different culture, but to help it in some way. Tourists bring money to the community, which the community can invest in local projects. However, this does not mean you can act the way you might do back home. The most important thing is to show respect, learn about, and be aware of, local customs and traditions. Always remember you&#x27;re a guest&quot;.</p>
+<p>Dawn Baker, manager of travel company Footprints, runs tours to tribal areas in Peru. &#x27;Good companies specializing in tribal tours are very careful about who they allow on their tours&#x27;, she says. &#x27;They won&#x27;t take anyone they feel is unsuitable&#x27;. Baker offers reading recommendations so that visitors can read about the country and its cultures. &#x27;The rewards of a trip to this country are priceless, and the more you know in advance, the more priceless they are&#x27;.</p>
+<p>Tribal tourism travelers are often surprised at how basic their facilities are when they get there. &#x27;It&#x27;s not for everyone, but for me it was all part of the experience&#x27;, says Jamie White, who has recently returned from a trip to Borneo. &#x27;We stayed in the same huts that everyone was living in, with no running water and no electricity. It was basic, but it was an ethical way to travel. Being comfortable means you use more local resources and so have more of an environment impact.&#x27;</p>
+<p>Source: Complete IELTS band 4-5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Look at the following statements and the list of people below. Match each statement with the correct person, A-D.</i></p>
+<p><b>NB: You may use any letter more than once.</b></p>
+<p><b>List of People</b></p><ul>
+<li>A. Ian Coleman</li>
+<li>B. Hilary Waterhouse</li>
+<li>C. Dawn Baker</li>
+<li>D. Jamie White</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. Travellers may need to change the way they behave.</div>
+<label class="opt"><input type="radio" name="ex1-q1" value="A" onchange="onPick('ex1',1,'A')">A. Ian Coleman</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="B" onchange="onPick('ex1',1,'B')">B. Hilary Waterhouse</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="C" onchange="onPick('ex1',1,'C')">C. Dawn Baker</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="D" onchange="onPick('ex1',1,'D')">D. Jamie White</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Some travellers would not enjoy living the way that the local people do.</div>
+<label class="opt"><input type="radio" name="ex1-q2" value="A" onchange="onPick('ex1',2,'A')">A. Ian Coleman</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="B" onchange="onPick('ex1',2,'B')">B. Hilary Waterhouse</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="C" onchange="onPick('ex1',2,'C')">C. Dawn Baker</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="D" onchange="onPick('ex1',2,'D')">D. Jamie White</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Tribal tourism can have benefits for local people.</div>
+<label class="opt"><input type="radio" name="ex1-q3" value="A" onchange="onPick('ex1',3,'A')">A. Ian Coleman</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="B" onchange="onPick('ex1',3,'B')">B. Hilary Waterhouse</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="C" onchange="onPick('ex1',3,'C')">C. Dawn Baker</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="D" onchange="onPick('ex1',3,'D')">D. Jamie White</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Some travellers make local people do things that they would not normally do.</div>
+<label class="opt"><input type="radio" name="ex1-q4" value="A" onchange="onPick('ex1',4,'A')">A. Ian Coleman</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="B" onchange="onPick('ex1',4,'B')">B. Hilary Waterhouse</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="C" onchange="onPick('ex1',4,'C')">C. Dawn Baker</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="D" onchange="onPick('ex1',4,'D')">D. Jamie White</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 5. Learning about a place before you go there makes your trip much more satisfying.</div>
+<label class="opt"><input type="radio" name="ex1-q5" value="A" onchange="onPick('ex1',5,'A')">A. Ian Coleman</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="B" onchange="onPick('ex1',5,'B')">B. Hilary Waterhouse</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="C" onchange="onPick('ex1',5,'C')">C. Dawn Baker</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="D" onchange="onPick('ex1',5,'D')">D. Jamie White</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex1')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex1')">Làm lại bài này</button></div>
+<div id="score-ex1"></div><div id="submit-ex1"></div><div id="review-ex1"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex2" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex2" class="card">
+<h2>Exercise 2: What is multi-tasking?</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">What is multi-tasking?</h3>
+<p>Multi-tasting might feel productive, but it can be more dangerous than drink driving and even make you drop IQ points. Multi-tasking is the appearance of being able to handle more than one task at the same time. For decades, humans have grappled with the notion that despite the 100 million neurons in their brains, we actually remain unable to do two things at once. When we talk about multi-tasking, we&#x27;re really referring to rapidly switching between tasks. A hot topic of psychological research around the world, particularly in the US, the study of multi-tasking is still in its infancy. Many questions remain unanswered and will only be resolved with time. However, research is showing that the way the human brain functions does not allow multi-tasking to deliver longed-for efficiencies.</p>
+<p>Is it a myth?</p>
+<p>Many scientists believe the ability to multi-task is a myth. In fact, one psychiatrist has gone so far as to describe it as a &#x27;mythical activity in which people believe they can perform two or more tasks simultaneously as effectively as one&#x27;. Unlike computers, which can perform tasks at lightning speed, the human brain needs to switch between tasks, depending on which area of the brain is being used. Multi-tasking often involves goal switching and re-evaluating, which experts say takes time. What appears to be human multi-tasking is more akin to channel surfing between television stations.</p>
+<p>Ernst Poppel, of the Institute for Medical Psychology at Munich&#x27;s Ludwig Maximilian University, believes humans cannot perform two or three tasks at once with the same degree of concentration. He says seemingly simultaneous awareness and information processing takes place in three-second windows. The human brain takes in the data about the environment streaming in from the sensory systems; subsequent events are then processed in the next window. For example, humans can concentrate on a conversation for three seconds, then move their focus to a computer screen for three seconds, and then to a crying child three seconds later. While one task is in the foreground of human consciousness, the others remain in the background until it is their turn to be given access to the central processor in the human brain.</p>
+<p>How did the notion of multi-tasking start?</p>
+<p>The concept came to the fore with the advent of computers, which have central processing units and can proceed rapidly from one task to another. The notion of multi-tasking appeals because it suggests that more can be achieved within a certain amount of time. It is of particular appeal to employers keen to gain efficiencies. However, research shows usually there is little to be gained by humans switching between tasks.</p>
+<p>Does multi-tasking save time?</p>
+<p>Research has shown, generally, it doesn&#x27;t. In fact, it can have the opposite effect. It can take longer to do multiple tasks concurrently than if the focus were on completing one task at a time. Dr Julia Irwin, of Macquarie University&#x27;s Department of Psychology in Sydney, says the problem with multi-tasking is that the amount of attentional capacity humans have is restricted, and it has to be shared among the several tasks being performed.</p>
+<p>When flipping between tasks, humans must pause between switching from one part of the brain to another. This is known as a post-refractory pause and uses precious time. Switching back to the original task takes up more time again.</p>
+<p>Professor David E. Meyer, a psychology professor at the University of Michigan, has shown how time is lost when humans shuttle between tasks. People were asked to write a report and check their email at the same time. Those who constantly jumped between the tasks took about one and a half times as long to complete the task as those who completed one job before turning to another.</p>
+<p>Given our human limitations, can we actually improve our performance at multi-tasking?</p>
+<p>You can improve your multi-tasking ability, but only up to a point. For a long time, people have known that training to perform a particular sequence of tasks can reduce the time it takes if those tasks can become routine. This is because rote tasks require fewer mental demands. &#x27;Those tasks that benefit from practice and which we tend to do well when multi-tasking tend to be ones that can be automated with practice and don&#x27;t require much attention. So, for example, you can run through in your head what you have to do in the coming day while having a shower,&#x27; says Dr Julia Irwin. However, just because a person has improved their efficiency performing one set of tasks does not mean they have improved their multi-tasking efficiency generally. Research has shown the time lost when switching between tasks increases with the complexity and unfamiliarity of the tasks.</p>
+<p>Source: IELTS advantage</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Look at the following statements and the list of people below. Match each statement with the correct person, A-D.</i></p>
+<p><b>List of People</b></p><ul>
+<li>A) Julia Irwin</li>
+<li>B) Ernst Poppel</li>
+<li>C) Marcel Just</li>
+<li>D) David E. Meyer</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. Switching from task to task results in slower performance.</div>
+<label class="opt"><input type="radio" name="ex2-q1" value="A" onchange="onPick('ex2',1,'A')">A) Julia Irwin</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="B" onchange="onPick('ex2',1,'B')">B) Ernst Poppel</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="C" onchange="onPick('ex2',1,'C')">C) Marcel Just</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="D" onchange="onPick('ex2',1,'D')">D) David E. Meyer</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Although possible, multi-tasking is time consuming.</div>
+<label class="opt"><input type="radio" name="ex2-q2" value="A" onchange="onPick('ex2',2,'A')">A) Julia Irwin</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="B" onchange="onPick('ex2',2,'B')">B) Ernst Poppel</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="C" onchange="onPick('ex2',2,'C')">C) Marcel Just</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="D" onchange="onPick('ex2',2,'D')">D) David E. Meyer</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Multi-tasking works best with undemanding activities.</div>
+<label class="opt"><input type="radio" name="ex2-q3" value="A" onchange="onPick('ex2',3,'A')">A) Julia Irwin</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="B" onchange="onPick('ex2',3,'B')">B) Ernst Poppel</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="C" onchange="onPick('ex2',3,'C')">C) Marcel Just</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="D" onchange="onPick('ex2',3,'D')">D) David E. Meyer</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Multi-tasking is in fact the brain focusing on different things for short sequences.</div>
+<label class="opt"><input type="radio" name="ex2-q4" value="A" onchange="onPick('ex2',4,'A')">A) Julia Irwin</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="B" onchange="onPick('ex2',4,'B')">B) Ernst Poppel</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="C" onchange="onPick('ex2',4,'C')">C) Marcel Just</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="D" onchange="onPick('ex2',4,'D')">D) David E. Meyer</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex2')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex2')">Làm lại bài này</button></div>
+<div id="score-ex2"></div><div id="submit-ex2"></div><div id="review-ex2"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex3" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex3" class="card">
+<h2>Exercise 3: Out of Africa: solar energy from the Sahara</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Out of Africa: solar energy from the Sahara</h3>
+<p><i>Vivienne Walt reports on how the Sahara Desert could offer a truly green solution to Europe&#x27;s energy problems</i></p>
+<p>A. For years, the Sahara has been regarded by many Europeans as a terra incognita* of little economic value or importance. But this idea may soon change completely. Politicians and scientists on both sides of the Mediterranean are beginning to focus on the Sahara&#x27;s potential to provide power for Europe in the future. They believe the desert&#x27;s true value comes from the fact that it is dry and empty. Some areas of the Sahara reach 45 degrees centigrade on many afternoons. It is, in other words, a gigantic natural storehouse of solar energy.</p>
+<p>B. A few years ago, scientists began to calculate just how much energy the Sahara holds. They were astonished at the answer. In theory, a 90,600 square kilometre chunk of the Sahara - smaller than Portugal and a little over 1% of its total area - could yield the same amount of electricity as all the world&#x27;s power plants combined. A smaller square of 15,500 square kilometres - about the size of Connecticut could provide electricity for Europe&#x27;s 500 million people. &#x27;I admit I was sceptical until I did the calculations myself,&#x27; says Michael Pawlyn, director of Exploration Architecture, one of three British environmental companies comprising the Sahara Forest Project, which is testing solar plants in Oman and the United Arab Emirates. Pawlyn calls the Sahara&#x27;s potential &#x27;staggering&#x27;.</p>
+<p>C. At the moment, no one is proposing the creation of a solar power station the size of a small country. But a relatively well-developed technology exists, which proponents say could turn the Sahara&#x27;s heat and sunlight into a major source of electricity - Concentrating Solar Power [CSP]. Unlike solar panels, which convert sunlight directly into electricity, CSP utilises mirrors which focus light on water pipes or boilers to produce very hot steam to operate the turbines of generators. Small CSP plants have produced power in California&#x27;s Mojave Desert since the 1980s. The Sahara Forest Project proposes building CSP plants in areas below sea level [the Sahara has several such depressions] so that sea water can flow into them. This water would then be purified and used for powering turbines and washing dust off the mirrors. Waste water would then supply irrigation to areas around the stations, creating lush oases - hence the &#x27;forest&#x27; in the group&#x27;s name.</p>
+<p>D. But producing Significant quantities of electricity means building huge arrays of mirrors and pipes across hundreds of miles of remote desert, which is expensive. Gerry Wolff, an engineer who heads DESERTEC, an international consortium of solar-power scientists, says they have estimated it will cost about $59 billion to begin transmitting power from the Sahara by 2020.</p>
+<p>E. Building plants is just part of the challenge. One of the drawbacks to CSP technology is that it works at maximum efficiency only in sunny, hot climates - and deserts tend to be distant from population centres. To supply Europe with 20% of its electricity needs, more than 19,300 kilometres of cables would need to be laid under the Mediterranean, says Gunnar Asplund, head of HVOC research at ABB Power Technologies in Ludvika, Sweden. Indeed, to use renewable sources of power, including solar, wind and tidal, Europe will need to build completely new electrical grids. That&#x27;s because existing infrastructures, built largely for the coal-fired plants that supply 80% of Europe&#x27;s power, would not be suitable for carrying the amount of electricity generated by the Sahara. Germany&#x27;s government-run Aerospace Centre, which researches energy, estimates that replacing those lines could raise the cost of building solar plants in the Sahara and sending significant amounts of power to Europe to about $465 billion over the next 40 years. Generous government subsidies will be needed. &#x27;Of course, it costs a lot of money,&#x27; says Asplund. &#x27;It&#x27;s a lot cheaper to burn coal than to make solar power in the Sahara.&#x27;</p>
+<p>F. Meanwhile, some companies are getting started. Seville engineering company Abengoa is building one solar-thermal plant in Algeria and another in Morocco, while a third is being built in Egypt by a Spanish-Japanese joint venture. The next step will be to get cables in place. Although the European Parliament has passed a law that aids investors who help the continent reach its goal of getting 20% of its power from renewable energy by 2020, it could take years to create the necessary infrastructure.</p>
+<p>G. Nicholas Dunlop, secretary-general of the London-based NGO e-Parliament, thinks companies should begin transmitting small amounts of solar power as soon as the North African plants begin operating, by linking a few cable lines under the Med. &#x27;I call it the Lego method,&#x27; he says. &#x27;Build it piece by piece.&#x27; If it can be shown that power from the Sahara can be produced profitably, he says, companies and governments will soon jump in. If they do, perhaps airplane passengers flying across the Sahara will one day count the mirrors and patches of green instead of staring at sand.</p>
+<p>*terra incognita - Latin, meaning &#x27;an unknown land&#x27;</p>
+<p>Source: Complete IELTS band 5-6.5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Look at the following statements and the list of organisations below. Match each statement with the correct organisation, A-G.</i></p>
+<p><b>List of Organisations</b></p><ul>
+<li>A) Exploration Architecture</li>
+<li>B) DESERTEC</li>
+<li>C) ABB Power Technologies</li>
+<li>D) Aerospace Centre</li>
+<li>E) Abengoa</li>
+<li>F) The European Parliament</li>
+<li>G) e-Parliament</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. They have set a time for achieving an objective.</div>
+<label class="opt"><input type="radio" name="ex3-q1" value="A" onchange="onPick('ex3',1,'A')">A) Exploration Architecture</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="B" onchange="onPick('ex3',1,'B')">B) DESERTEC</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="C" onchange="onPick('ex3',1,'C')">C) ABB Power Technologies</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="D" onchange="onPick('ex3',1,'D')">D) Aerospace Centre</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="E" onchange="onPick('ex3',1,'E')">E) Abengoa</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="F" onchange="onPick('ex3',1,'F')">F) The European Parliament</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="G" onchange="onPick('ex3',1,'G')">G) e-Parliament</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. They believe that successful small-scale projects will demonstrate that larger projects are possible.</div>
+<label class="opt"><input type="radio" name="ex3-q2" value="A" onchange="onPick('ex3',2,'A')">A) Exploration Architecture</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="B" onchange="onPick('ex3',2,'B')">B) DESERTEC</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="C" onchange="onPick('ex3',2,'C')">C) ABB Power Technologies</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="D" onchange="onPick('ex3',2,'D')">D) Aerospace Centre</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="E" onchange="onPick('ex3',2,'E')">E) Abengoa</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="F" onchange="onPick('ex3',2,'F')">F) The European Parliament</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="G" onchange="onPick('ex3',2,'G')">G) e-Parliament</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. They have a number of renewable energy projects under construction.</div>
+<label class="opt"><input type="radio" name="ex3-q3" value="A" onchange="onPick('ex3',3,'A')">A) Exploration Architecture</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="B" onchange="onPick('ex3',3,'B')">B) DESERTEC</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="C" onchange="onPick('ex3',3,'C')">C) ABB Power Technologies</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="D" onchange="onPick('ex3',3,'D')">D) Aerospace Centre</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="E" onchange="onPick('ex3',3,'E')">E) Abengoa</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="F" onchange="onPick('ex3',3,'F')">F) The European Parliament</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="G" onchange="onPick('ex3',3,'G')">G) e-Parliament</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. They are already experimenting with solar energy installations in other parts of the world.</div>
+<label class="opt"><input type="radio" name="ex3-q4" value="A" onchange="onPick('ex3',4,'A')">A) Exploration Architecture</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="B" onchange="onPick('ex3',4,'B')">B) DESERTEC</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="C" onchange="onPick('ex3',4,'C')">C) ABB Power Technologies</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="D" onchange="onPick('ex3',4,'D')">D) Aerospace Centre</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="E" onchange="onPick('ex3',4,'E')">E) Abengoa</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="F" onchange="onPick('ex3',4,'F')">F) The European Parliament</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="G" onchange="onPick('ex3',4,'G')">G) e-Parliament</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex3')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex3')">Làm lại bài này</button></div>
+<div id="score-ex3"></div><div id="submit-ex3"></div><div id="review-ex3"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex4" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex4" class="card">
+<h2>Exercise 4: The truth about lying</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">The truth about lying</h3>
+<p><i>Over the years Richard Wiseman has tried to unravel the truth about deception - investigating the signs that give away a liar.</i></p>
+<p>A. In the 1970s, as part of a large-scale research programme exploring the area of interspecies communication, Dr Francine Patterson from Stanford University attempted to teach two lowland gorillas called Michael and Koko a simplified version of Sign Language. According to Patterson, the great apes were capable of holding meaningful conversations, and could even reflect upon profound topics, such as love and death. During the project, their trainers believe they uncovered instances where the two gorillas&#x27; linguistic skills seemed to provide reliable evidence of intentional deceit. In one example, Koko broke a toy cat, and then signed to indicate that the breakage had been caused by one of her trainers. In another episode, Michael ripped a jacket belonging to a trainer and, when asked who was responsible for the incident, signed &#x27;Koko&#x27;. When the trainer expressed some scepticism, Michael appeared to change his mind, and indicated that Dr. Patterson was actually responsible, before finally confessing.</p>
+<p>B. Other researchers have explored the development of deception in children. Some of the most interesting experiments have involved asking youngsters not to take a peek at their favourite toys. During these studies, a child is led into a laboratory and asked to face one of the walls. The experimenter then explains that he is going to set up an elaborate toy a few feet behind them. After setting up the toy, the experimenter says that he has to leave the laboratory, and asks the child not to turn around and peek at the toy. The child is secretly filmed by hidden cameras for a few minutes, and then the experimenter returns and asks them whether they peeked. Almost all three-year-olds do, and then half of them lie about it to the experimenter. By the time the children have reached the age of five, all of them peek and all of them lie. The results provide compelling evidence that lying starts to emerge the moment we learn to speak adapted from The National Newspaper.</p>
+<p>C. So what are the tell-tale signs that give away a lie? In 1994, the psychologist Richard Wiseman devised a large-scale experiment on a TV programme called Tomorrow&#x27;s World. As part of the experiment, viewers watched two interviews in which Wiseman asked a presenter in front of the cameras to describe his favourite film. In one interview, the presenter picked Some Like It Hot and he told the truth; in the other interview, he picked Gone with the Wind and lied. The viewers were then invited to make a choice - to telephone in to say which film he was lying about. More than 30,000 calls were received, but viewers were unable to tell the difference and the vote was a 50/50 split. In similar experiments, the results have been remarkably consistent - when it comes to lie detection, people might as well simply toss a coin. It doesn&#x27;t matter if you are male or female, young or old; very few people are able to detect deception.</p>
+<p>D. Why is this? Professor Charles Bond from the Texas Christian University has conducted surveys into the sorts of behaviour people associate with lying. He has interviewed thousands of people from more than 60 countries, asking them to describe how they set about telling whether someone is lying. People&#x27;s answers are remarkably consistent. Almost everyone thinks liars tend to avert their gaze, nervously wave their hands around and shift about in their seats. There is, however, one small problem. Researchers have spent hour upon hour carefully comparing films of liars and truth-tellers. The results are clear. Liars do not necessarily look away from you; they do not appear nervous and move their hands around or shift about in their seats. People fail to detect lies because they are basing their opinions on behaviours that are not actually associated with deception.</p>
+<p>E. So what are we missing? It is obvious that the more information you give away, the greater the chances of some of it coming back to haunt you. As a result, liars tend to say less and provide fewer details than truth-tellers. Looking back at the transcripts of the interviews with the presenter, his lie about Gone with the Wind contained about 40 words, whereas the truth about Some Like It Hot was nearly twice as long. People who lie also try psychologically to keep a distance from their falsehoods, and so tend to include fewer references to themselves in their stories. In his entire interview about Gone with the Wind, the presenter only once mentioned how the film made him feel, compared with the several references to his feelings when he talked about Some Like It Hot.</p>
+<p>F. The simple fact is that the real clues to deceit are in the words that people use, not the body language. So do people become better lie detectors when they listen to a liar, or even just read a transcript of their comments? The interviews with the presenter were also broadcast on radio and published in a newspaper, and although the lie-detecting abilities of the television viewers were no better than chance, the newspaper readers were correct 64% of the time, and the radio listeners scored an impressive 73% accuracy rate.</p>
+<p>Source: Complete IELTS band 5-6.5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Look at the following statements and the list of experiments below. Match each statement with the correct experiment, A- C.</i></p>
+<p><b>You may use any letter more than once.</b></p>
+<p><b>List of Experiments</b></p><ul>
+<li>A) the gorilla experiment</li>
+<li>B) the experiment with children</li>
+<li>C) the TV experiment</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. Someone who was innocent was blamed for something.</div>
+<label class="opt"><input type="radio" name="ex4-q1" value="A" onchange="onPick('ex4',1,'A')">A) the gorilla experiment</label>
+<label class="opt"><input type="radio" name="ex4-q1" value="B" onchange="onPick('ex4',1,'B')">B) the experiment with children</label>
+<label class="opt"><input type="radio" name="ex4-q1" value="C" onchange="onPick('ex4',1,'C')">C) the TV experiment</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Those involved knew they were being filmed.</div>
+<label class="opt"><input type="radio" name="ex4-q2" value="A" onchange="onPick('ex4',2,'A')">A) the gorilla experiment</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="B" onchange="onPick('ex4',2,'B')">B) the experiment with children</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="C" onchange="onPick('ex4',2,'C')">C) the TV experiment</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Some objects were damaged.</div>
+<label class="opt"><input type="radio" name="ex4-q3" value="A" onchange="onPick('ex4',3,'A')">A) the gorilla experiment</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="B" onchange="onPick('ex4',3,'B')">B) the experiment with children</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="C" onchange="onPick('ex4',3,'C')">C) the TV experiment</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Some instructions were ignored.</div>
+<label class="opt"><input type="radio" name="ex4-q4" value="A" onchange="onPick('ex4',4,'A')">A) the gorilla experiment</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="B" onchange="onPick('ex4',4,'B')">B) the experiment with children</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="C" onchange="onPick('ex4',4,'C')">C) the TV experiment</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex4')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex4')">Làm lại bài này</button></div>
+<div id="score-ex4"></div><div id="submit-ex4"></div><div id="review-ex4"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex5" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex5" class="card">
+<h2>Exercise 5: Last man standing</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Last man standing</h3>
+<p><i>Some 50,000 years ago, Homo sapiens beat other hominids to become the only surviving species. Kate Ravilious reveals how we did it.</i></p>
+<p>A. Today, there are over seven billion people living on Earth. No other species has exerted as much influence over the planet as us. But turn the clock back 80,000 years and we were one of a number of species roaming the Earth. Our own species. Homo sapiens (Latin for &#x27;wise man&#x27;), was most successful in Africa. In western Eurasia, the Neanderthals dominated, while Hom erectus may have lived in Indonesia. Meanwhile, an unusual finger bone and tooth, discovered in Denisova cave in Siberia in 2008, have led scientists to believe that yet another human population - the Denisovans - may also have been widespread across Asia. Somewhere along the line, these other human species died out, leaving Homo sapiens as the sole survivor. So what made us the winners in the battle for survival?</p>
+<p>B. Some 74.000 years ago, the Toba &#x27;supervolcano&#x27; on the Indonesian island of Sumatra erupted. The scale of the event was so great that ash from the eruption was flung as far as eastern India, more than 2,000 kilometres away. Oxford archaeologist Mike Petraglia and his team have uncovered thousands of stone tools buried underneath the Toba ash. The mix of hand axes and spear tips have led Petraglia to speculate that Homo sapiens and Homo erectus were both living in eastern India prior to the Toba eruption. Based on careful examination of the tools and dating of the sediment layers where they were found. Petraglia and his team suggest that Homo sapiens arrived in eastern India around 78.000 years ago. migrating out of Africa and across Arabia during a favourable climate period. After their arrival, the simple tools belonging to Homo erectus seemed to lessen in number and eventually disappear completely. &#x27;We think that Homo sapiens had a more efficient hunting technology, which could have given them the edge.&#x27; says Petraglia. &#x27;Whether the eruption of Toba also played a role in the extinction of the Homo erectus-like species is unclear to us.&#x27;</p>
+<p>C. Some 45.000 years later, another fight for survival took place. This time, the location was Europe and the protagonists were another species, the Neanderthals. They were a highly successful species that dominated the European landscape for 300.000 years. Yet within just a few thousand years of the arrival of Homo sapiens, their number plummeted. They eventually disappeared from the landscape around 30.000 years ago with their last known refuge being southern Iberia, including Gibraltar. Initially. Homo sapiens and Neanderthals lived alongside each other and had no reason to compete. But then Europe&#x27;s climate swung into a cold, inhospitable, dry phase. &#x27;Neanderthal and Homo sapiens populations had to retreat to refugia (pockets of habitable land). This heightened competition between the two groups,&#x27; explains Chris Stringer, anthropologist at the Natural History Museum in London.</p>
+<p>D. Both species were strong and stockier than the average human today, but Neanderthals were particularly robust. &#x27;Their skeletons show that they had broad shoulders and thick necks,&#x27; says Stringer. &#x27;Homo sapiens, on the other hand, had longer forearms, which undoubtedly enabled them to throw a spear from some distance, with less danger and using relatively little energy,&#x27; explains Stringer. This long-range ability may have given Homo sapiens an advantage in hunting. When it came to keeping warm. Homo sapiens had another skill: weaving and sewing. Archaeologists have uncovered simple needles fashioned from ivory and bone alongside Homo sapiens, dating as far back as 35,000 years ago. &#x27;Using this technology, we could use animal skins to make ourselves tents, warm clothes and fur boots,&#x27; says Stringer. In contrast. Neanderthals never seemed to master sewing skills, instead relying on pinning skins together with thorns.</p>
+<p>E. A thirst for exploration provided Homo sapiens with another significant advantage over Neanderthals. Objects such as shell beads and flint tools, discovered many miles from their source, show that our ancestors travelled over large distances, in order to barter and exchange useful materials, and share ideas and knowledge. By contrast. Neanderthals tended to keep themselves to themselves, living in small groups. They misdirected their energies by only gathering resources from their immediate surroundings and perhaps failing to discover new technologies outside their territory.</p>
+<p>F. Some of these differences in behaviour may have emerged because the two species thought in different ways. By comparing skull shapes, archaeologists have shown that Homo sapiens had a more developed temporal lobe - the regions at the side of the brain, associated with listening, language and long-term memory. &#x27;We think that Homo sapiens had a significantly more complex language than Neanderthals and were able to comprehend and discuss concepts such as the distant past and future.&#x27; says Stringer. Penny Spikins, an archaeologist at the University of York, has recently suggested that Homo sapiens may also have had a greater diversity of brain types than Neanderthals. &#x27;Our research indicates that high-precision tools, new hunting technologies and the development of symbolic communication may all have come about because they were willing to include people with &quot;different&quot; minds and specialised roles in their society,&#x27; she explains. &#x27;We see similar kinds of injuries on male and female Neanderthal skeletons, implying there was no such division of labour,&#x27; says Spikins.</p>
+<p>G. Thus by around 30,000 years ago. many talents and traits were well established in Homo sapiens societies but still absent from Neanderthal communities. Stringer thinks that the Neanderthals were just living in the wrong place at the wrong time. &#x27;They had to compete with Homo sapiens during a phase of very unstable climate across Europe. During each rapid climate fluctuation, they may have suffered greater losses of people than Homo sapiens, and thus were slowly worn down,&#x27; he says. &#x27;If the climate had remained stable throughout, they might still be here.&#x27;</p>
+<p>Source: Complete IELTS band 5-6.5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Look at the following statements and the list of researchers, A-C, below. Match each statement with the correct researcher.</i></p>
+<p><b>List of Researchers</b></p><ul>
+<li>A. Mike Petraglia</li>
+<li>B. Chris Stringer</li>
+<li>C. Penny Spikins</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. No evidence can be found to suggest that Neanderthal communities allocated tasks to different members.</div>
+<label class="opt"><input type="radio" name="ex5-q1" value="A" onchange="onPick('ex5',1,'A')">A. Mike Petraglia</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="B" onchange="onPick('ex5',1,'B')">B. Chris Stringer</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="C" onchange="onPick('ex5',1,'C')">C. Penny Spikins</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Homo sapiens may have been able to plan ahead.</div>
+<label class="opt"><input type="radio" name="ex5-q2" value="A" onchange="onPick('ex5',2,'A')">A. Mike Petraglia</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="B" onchange="onPick('ex5',2,'B')">B. Chris Stringer</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="C" onchange="onPick('ex5',2,'C')">C. Penny Spikins</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Scientists cannot be sure whether a sudden natural disaster contributed to the loss of a human species.</div>
+<label class="opt"><input type="radio" name="ex5-q3" value="A" onchange="onPick('ex5',3,'A')">A. Mike Petraglia</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="B" onchange="onPick('ex5',3,'B')">B. Chris Stringer</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="C" onchange="onPick('ex5',3,'C')">C. Penny Spikins</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Environmental conditions restricted the areas where Homo sapiens and Neanderthals could live.</div>
+<label class="opt"><input type="radio" name="ex5-q4" value="A" onchange="onPick('ex5',4,'A')">A. Mike Petraglia</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="B" onchange="onPick('ex5',4,'B')">B. Chris Stringer</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="C" onchange="onPick('ex5',4,'C')">C. Penny Spikins</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex5')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex5')">Làm lại bài này</button></div>
+<div id="score-ex5"></div><div id="submit-ex5"></div><div id="review-ex5"></div>
+</div></div>
+</div></section></div>
+</main>
+<script>
+const DATA = [{"id": "ex1", "options": ["A. Ian Coleman", "B. Hilary Waterhouse", "C. Dawn Baker", "D. Jamie White"], "testName": "Matching Names - ex1 - Holidays with a difference", "questions": [{"n": 1, "stem": "Travellers may need to change the way they behave.", "key": "B", "evidence": "However, this does not mean you can act the way you might do back home. The most important thing is to show respect, learn about, and be aware of, local customs and traditions. Always remember you're a guest.", "explain_vi": "Bà Hilary Waterhouse khuyên du khách không nên hành xử như ở nhà mà phải tôn trọng, tìm hiểu phong tục địa phương — tức là du khách có thể cần thay đổi cách hành xử. Các nhân vật khác không đưa ra lời khuyên về cách hành xử: Coleman kể chuyện bức tượng, Baker nói về việc đọc sách trước chuyến đi, White nói về cơ sở vật chất.", "paraphrase": [["change the way they behave", "not act the way you might do back home"], ["show respect … aware of … local customs and traditions", "thay đổi cách cư xử cho phù hợp"]]}, {"n": 2, "stem": "Some travellers would not enjoy living the way that the local people do.", "key": "D", "evidence": "'It's not for everyone, but for me it was all part of the experience', says Jamie White, who has recently returned from a trip to Borneo. 'We stayed in the same huts that everyone was living in, with no running water and no electricity.'", "explain_vi": "Jamie White nói thẳng \"It's not for everyone\" (không phải ai cũng chịu được) khi kể về việc ở trong những túp lều như người dân địa phương, không có nước máy, không có điện. Các nhân vật khác không đề cập đến việc du khách có thích nghi được với cách sống của người dân hay không.", "paraphrase": [["would not enjoy", "It's not for everyone"], ["living the way that the local people do", "stayed in the same huts that everyone was living in"]]}, {"n": 3, "stem": "Tribal tourism can have benefits for local people.", "key": "B", "evidence": "Tourists bring money to the community, which the community can invest in local projects.", "explain_vi": "Cùng bà Hilary Waterhouse: du khách mang tiền đến cho cộng đồng, cộng đồng đầu tư vào các dự án địa phương — đó chính là lợi ích cho người dân địa phương. Ian Coleman lại nêu mặt tiêu cực (bức tượng mất ý nghĩa gốc).", "paraphrase": [["benefits for local people", "bring money to the community … invest in local projects"]]}, {"n": 4, "stem": "Some travellers make local people do things that they would not normally do.", "key": "A", "evidence": "However, visitors now pay money for them to bring the statue out and carry it around, while they take photographs. As a result, Maximon has lost his original meaning, and is now just another tourist attraction.", "explain_vi": "Ian Coleman kể: du khách trả tiền để người dân mang tượng Maximon ra rước (vốn mỗi năm chỉ làm một lần) — tức là khiến người dân làm điều họ bình thường không làm. Không nhân vật nào khác mô tả tình huống tương tự.", "paraphrase": [["make local people do things that they would not normally do", "visitors now pay money for them to bring the statue out and carry it around"], ["once a year the locals bring him out", "bình thường chỉ làm mỗi năm một lần"]]}, {"n": 5, "stem": "Learning about a place before you go there makes your trip much more satisfying.", "key": "C", "evidence": "Baker offers reading recommendations so that visitors can read about the country and its cultures. 'The rewards of a trip to this country are priceless, and the more you know in advance, the more priceless they are'.", "explain_vi": "Bà Dawn Baker khuyên du khách đọc sách tìm hiểu về đất nước và văn hóa trước chuyến đi, vì \"càng biết nhiều từ trước, chuyến đi càng đáng giá\" (the more you know in advance, the more priceless they are) — khớp với \"hài lòng hơn\" (more satisfying).", "paraphrase": [["learning about a place before you go", "read about the country and its cultures … the more you know in advance"], ["much more satisfying", "much more priceless"]]}]}, {"id": "ex2", "options": ["A) Julia Irwin", "B) Ernst Poppel", "C) Marcel Just", "D) David E. Meyer"], "testName": "Matching Names - ex2 - What is multi-tasking?", "questions": [{"n": 1, "stem": "Switching from task to task results in slower performance.", "key": "D", "evidence": "Those who constantly jumped between the tasks took about one and a half times as long to complete the task as those who completed one job before turning to another.", "explain_vi": "Giáo sư David E. Meyer chứng minh: những người liên tục nhảy qua lại giữa các việc tốn thời gian gấp rưỡi so với người làm xong việc này rồi mới chuyển sang việc khác — tức là chuyển đổi qua lại khiến hiệu suất chậm hơn. Poppel chỉ mô tả cơ chế cửa sổ 3 giây, không nói về tốc độ.", "paraphrase": [["switching from task to task", "jumped between the tasks"], ["slower performance", "took about one and a half times as long"]]}, {"n": 2, "stem": "Although possible, multi-tasking is time consuming.", "key": "A", "evidence": "You can improve your multi-tasking ability, but only up to a point. … Research has shown the time lost when switching between tasks increases with the complexity and unfamiliarity of the tasks.", "explain_vi": "Tiến sĩ Julia Irwin: khả năng đa nhiệm có thể cải thiện \"nhưng chỉ đến một mức độ\" (although possible), và \"thời gian mất đi khi chuyển đổi giữa các việc tăng lên\" (time consuming). Meyer (D) nói về hiệu suất chậm hơn nói chung, không nhấn mạnh khía cạnh \"có thể nhưng tốn thời gian\".", "paraphrase": [["although possible", "you can improve … but only up to a point"], ["time consuming", "the time lost when switching between tasks increases"]]}, {"n": 3, "stem": "Multi-tasking works best with undemanding activities.", "key": "A", "evidence": "'Those tasks that benefit from practice and which we tend to do well when multi-tasking tend to be ones that can be automated with practice and don't require much attention.'", "explain_vi": "Cũng Julia Irwin: những việc ta làm tốt khi đa nhiệm là những việc \"không đòi hỏi nhiều sự chú ý\" (don't require much attention) — chính là \"undemanding activities\". Không nhân vật nào khác đưa ra nhận định này.", "paraphrase": [["works best", "tend to do well when multi-tasking"], ["undemanding activities", "don't require much attention"]]}, {"n": 4, "stem": "Multi-tasking is in fact the brain focusing on different things for short sequences.", "key": "B", "evidence": "He says seemingly simultaneous awareness and information processing takes place in three-second windows. … humans can concentrate on a conversation for three seconds, then move their focus to a computer screen for three seconds, and then to a crying child three seconds later.", "explain_vi": "Ernst Poppel mô tả não bộ xử lý theo \"cửa sổ 3 giây\" (three-second windows), tập trung vào từng việc trong vài giây rồi chuyển — khớp với \"tập trung vào những việc khác nhau trong các khoảng ngắn\". Lưu ý: Marcel Just (C) không hề xuất hiện trong bài đọc nên không thể là đáp án.", "paraphrase": [["focusing on different things for short sequences", "concentrate … for three seconds, then move their focus … for three seconds"]]}]}, {"id": "ex3", "options": ["A) Exploration Architecture", "B) DESERTEC", "C) ABB Power Technologies", "D) Aerospace Centre", "E) Abengoa", "F) The European Parliament", "G) e-Parliament"], "testName": "Matching Names - ex3 - Out of Africa: solar energy from the Sahara", "questions": [{"n": 1, "stem": "They have set a time for achieving an objective.", "key": "B", "evidence": "Gerry Wolff, an engineer who heads DESERTEC, an international consortium of solar-power scientists, says they have estimated it will cost about $59 billion to begin transmitting power from the Sahara by 2020.", "explain_vi": "DESERTEC đặt mốc thời gian \"by 2020\" cho mục tiêu bắt đầu truyền tải điện từ Sahara — khớp \"đặt thời hạn để đạt mục tiêu\". Bẫy cần tránh: Nghị viện châu Âu (F) chỉ thông qua luật hỗ trợ mục tiêu 20% vào 2020 đã có sẵn, chứ không phải do họ đặt ra mốc thời gian.", "paraphrase": [["set a time for achieving an objective", "begin transmitting power from the Sahara by 2020"]]}, {"n": 2, "stem": "They believe that successful small-scale projects will demonstrate that larger projects are possible.", "key": "G", "evidence": "Nicholas Dunlop, secretary-general of the London-based NGO e-Parliament, thinks companies should begin transmitting small amounts of solar power as soon as the North African plants begin operating, by linking a few cable lines under the Med. 'I call it the Lego method,' he says. 'Build it piece by piece.' If it can be shown that power from the Sahara can be produced profitably, he says, companies and governments will soon jump in.", "explain_vi": "Nicholas Dunlop (e-Parliament) đề xuất \"phương pháp Lego\" — bắt đầu từ việc truyền tải một lượng nhỏ điện, nếu chứng minh được có lợi nhuận thì các công ty và chính phủ sẽ tham gia — tức là dự án nhỏ thành công sẽ mở đường cho dự án lớn.", "paraphrase": [["successful small-scale projects", "transmitting small amounts of solar power … Build it piece by piece"], ["demonstrate that larger projects are possible", "If it can be shown … companies and governments will soon jump in"]]}, {"n": 3, "stem": "They have a number of renewable energy projects under construction.", "key": "E", "evidence": "Seville engineering company Abengoa is building one solar-thermal plant in Algeria and another in Morocco, while a third is being built in Egypt by a Spanish-Japanese joint venture.", "explain_vi": "Abengoa đang xây một nhà máy ở Algeria, một ở Morocco, và một nhà máy thứ ba đang được xây ở Ai Cập — tức là nhiều dự án đang thi công. Không tổ chức nào khác được mô tả là đang xây dựng nhiều dự án.", "paraphrase": [["under construction", "is building … is being built"], ["a number of … projects", "one … in Algeria and another in Morocco, while a third … in Egypt"]]}, {"n": 4, "stem": "They are already experimenting with solar energy installations in other parts of the world.", "key": "A", "evidence": "'I admit I was sceptical until I did the calculations myself,' says Michael Pawlyn, director of Exploration Architecture, one of three British environmental companies comprising the Sahara Forest Project, which is testing solar plants in Oman and the United Arab Emirates.", "explain_vi": "Michael Pawlyn là giám đốc Exploration Architecture; dự án Sahara Forest Project mà công ty tham gia \"đang thử nghiệm các nhà máy điện mặt trời ở Oman và UAE\" (testing solar plants) — tức là đang thử nghiệm ở những nơi khác trên thế giới.", "paraphrase": [["experimenting with solar energy installations", "testing solar plants"], ["in other parts of the world", "in Oman and the United Arab Emirates"]]}]}, {"id": "ex4", "options": ["A) the gorilla experiment", "B) the experiment with children", "C) the TV experiment"], "testName": "Matching Names - ex4 - The truth about lying", "questions": [{"n": 1, "stem": "Someone who was innocent was blamed for something.", "key": "A", "evidence": "In one example, Koko broke a toy cat, and then signed to indicate that the breakage had been caused by one of her trainers. In another episode, Michael ripped a jacket belonging to a trainer and, when asked who was responsible for the incident, signed 'Koko'.", "explain_vi": "Trong thí nghiệm với khỉ đột (gorilla): Koko làm vỡ đồ chơi rồi đổ lỗi cho huấn luyện viên (người vô tội), Michael xé áo rồi đổ cho Koko. Không thí nghiệm nào khác có tình tiết đổ lỗi cho người vô tội.", "paraphrase": [["someone who was innocent was blamed", "signed to indicate that the breakage had been caused by one of her trainers"]]}, {"n": 2, "stem": "Those involved knew they were being filmed.", "key": "C", "evidence": "In 1994, the psychologist Richard Wiseman devised a large-scale experiment on a TV programme called Tomorrow's World. As part of the experiment, viewers watched two interviews in which Wiseman asked a presenter in front of the cameras to describe his favourite film.", "explain_vi": "Thí nghiệm trên truyền hình (TV experiment): người dẫn chương trình trả lời \"trước ống kính máy quay\" (in front of the cameras) nên biết mình đang được quay. Ngược lại, ở thí nghiệm với trẻ em, các em \"bị quay lén bằng camera giấu kín\" (secretly filmed by hidden cameras) — không hề biết.", "paraphrase": [["knew they were being filmed", "in front of the cameras"], ["ngược lại", "secretly filmed by hidden cameras (thí nghiệm B)"]]}, {"n": 3, "stem": "Some objects were damaged.", "key": "A", "evidence": "Koko broke a toy cat … Michael ripped a jacket belonging to a trainer …", "explain_vi": "Cũng thí nghiệm khỉ đột: Koko làm vỡ (broke) con mèo đồ chơi, Michael xé rách (ripped) chiếc áo khoác — đều là đồ vật bị hư hại. Thí nghiệm với trẻ em và trên TV không có chi tiết đồ vật bị hỏng.", "paraphrase": [["objects were damaged", "broke a toy cat … ripped a jacket"]]}, {"n": 4, "stem": "Some instructions were ignored.", "key": "B", "evidence": "the experimenter … asks the child not to turn around and peek at the toy. … Almost all three-year-olds do, and then half of them lie about it to the experimenter.", "explain_vi": "Thí nghiệm với trẻ em: nhà nghiên cứu dặn các em \"không được quay lại nhìn trộm đồ chơi\", nhưng \"hầu như mọi trẻ 3 tuổi đều làm\" (Almost all three-year-olds do) — tức là phớt lờ hướng dẫn. Hai thí nghiệm còn lại không có chi tiết này.", "paraphrase": [["instructions were ignored", "asks the child not to turn around and peek … Almost all three-year-olds do"]]}]}, {"id": "ex5", "options": ["A. Mike Petraglia", "B. Chris Stringer", "C. Penny Spikins"], "testName": "Matching Names - ex5 - Last man standing", "questions": [{"n": 1, "stem": "No evidence can be found to suggest that Neanderthal communities allocated tasks to different members.", "key": "C", "evidence": "'We see similar kinds of injuries on male and female Neanderthal skeletons, implying there was no such division of labour,' says Spikins.", "explain_vi": "Penny Spikins: vết thương trên bộ xương nam và nữ Neanderthal tương tự nhau, cho thấy \"không hề có sự phân công lao động\" (no division of labour) — tức là không có bằng chứng cộng đồng Neanderthal phân chia công việc cho các thành viên.", "paraphrase": [["no evidence … allocated tasks to different members", "implying there was no such division of labour"]]}, {"n": 2, "stem": "Homo sapiens may have been able to plan ahead.", "key": "B", "evidence": "'We think that Homo sapiens had a significantly more complex language than Neanderthals and were able to comprehend and discuss concepts such as the distant past and future.' says Stringer.", "explain_vi": "Chris Stringer: Homo sapiens có thể \"hiểu và thảo luận các khái niệm như quá khứ xa xôi và tương lai\" — khả năng nghĩ về tương lai chính là cơ sở của việc lập kế hoạch trước (plan ahead).", "paraphrase": [["plan ahead", "comprehend and discuss concepts such as the … future"]]}, {"n": 3, "stem": "Scientists cannot be sure whether a sudden natural disaster contributed to the loss of a human species.", "key": "A", "evidence": "'Whether the eruption of Toba also played a role in the extinction of the Homo erectus-like species is unclear to us.'", "explain_vi": "Mike Petraglia: \"chưa rõ\" (is unclear to us) liệu vụ phun trào núi lửa Toba có góp phần vào sự tuyệt chủng của loài giống Homo erectus hay không — khớp hoàn toàn với \"các nhà khoa học không chắc chắn\".", "paraphrase": [["cannot be sure", "is unclear to us"], ["a sudden natural disaster", "the eruption of Toba"], ["the loss of a human species", "the extinction of the Homo erectus-like species"]]}, {"n": 4, "stem": "Environmental conditions restricted the areas where Homo sapiens and Neanderthals could live.", "key": "B", "evidence": "'Neanderthal and Homo sapiens populations had to retreat to refugia (pockets of habitable land). This heightened competition between the two groups,' explains Chris Stringer, anthropologist at the Natural History Museum in London.", "explain_vi": "Chris Stringer: khi khí hậu châu Âu chuyển lạnh khô khắc nghiệt, cả hai nhóm \"buộc phải rút về các refugia (những vùng đất có thể sinh sống)\" — tức là điều kiện môi trường đã giới hạn khu vực sinh sống của họ.", "paraphrase": [["environmental conditions", "Europe's climate swung into a cold, inhospitable, dry phase"], ["restricted the areas … could live", "had to retreat to refugia (pockets of habitable land)"]]}]}];
+const SUBMIT_CFG = {"endpoint": "https://script.google.com/macros/s/AKfycbzCX-jRyn28wS8lEQ-wtdM8qspFr-Ptj1c2r3ctxpi3hseVZ1UMBE8N4jXAx1-03pLn/exec", "unit": "IELTS-READING-MATCHING-NAMES"};
+const state = {};
+DATA.forEach(ex=>{state[ex.id]={answers:{},graded:false,attempt:0,attemptId:null,submittedAttemptIds:[],submitState:'idle',results:{},score:0,total:0,correct:0,wrong:0};});
+function studentVal(id){const el=document.getElementById(id);return el?el.value.trim():'';}
+function studentFormHTML(){
+  return '<div class="studentform"><h3>Thông tin học sinh (để gửi kết quả cho cô)</h3>'
+  +'<div class="sfields">'
+  +'<label>Họ và tên <span class="req">*</span><input id="studentName" autocomplete="name" placeholder="Nhập họ và tên"></label>'
+  +'<label>Lớp<input id="studentClass" placeholder="VD: 12A1"></label>'
+  +'<label>Mã HS<input id="studentId" placeholder="Mã học sinh"></label>'
+  +'</div><p class="muted">Kết quả chỉ được gửi về cho cô khi đã nhập họ tên.</p></div>';
+}
+function letterOf(opt){return opt.trim().charAt(0);}
+function fullLabel(exId,l){const ex=DATA.find(e=>e.id===exId);const o=ex.options.find(o=>letterOf(o)===l);return o||l;}
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-'+id).classList.add('active');
+  window.scrollTo(0,0);
+  if(id==='hub')updateHub();
+}
+function updateHub(){
+  DATA.forEach(ex=>{
+    const st=state[ex.id];const el=document.getElementById('status-'+ex.id);if(!el)return;
+    const answered=Object.keys(st.answers).length;
+    if(st.graded){el.textContent='Đã chấm: '+st.score+'/'+st.total;el.className='status done';}
+    else if(answered>0){el.textContent='Đang làm: '+answered+'/'+ex.questions.length+' câu';el.className='status doing';}
+    else{el.textContent='Chưa làm';el.className='status';}
+  });
+}
+function onPick(exId,qn,val){state[exId].answers[qn]=val;state[exId].graded=false;state[exId].submitState='idle';
+  document.getElementById('review-'+exId).innerHTML='';document.getElementById('score-'+exId).innerHTML='';
+  const sb=document.getElementById('submit-'+exId);if(sb)sb.innerHTML='';updateHub();}
+function gradeExercise(exId){
+  const ex=DATA.find(e=>e.id===exId),st=state[exId];let correct=0;const total=ex.questions.length;
+  let h='';
+  ex.questions.forEach(q=>{
+    const ua=st.answers[q.n]||'';
+    const ok=ua===q.key; if(ok)correct++;
+    h+='<div class="rq '+(ok?'correct':'wrong')+'">';
+    h+='<div class="stem"><b>Câu '+q.n+'.</b> '+esc(q.stem)+'</div>';
+    h+='<div class="ansline">'+(ok?'✅ Đúng':'❌ Sai')+' — Bạn chọn: <b>'+(ua?esc(fullLabel(exId,ua)):'<i>(chưa trả lời)</i>')+'</b> · Đáp án đúng: <b>'+esc(fullLabel(exId,q.key))+'</b></div>';
+    h+='<div class="evidence">Evidence (nguyên văn bài đọc): “'+esc(q.evidence)+'”</div>';
+    h+='<div class="explain"><b>Giải thích:</b> '+esc(q.explain_vi)+'</div>';
+    if(q.paraphrase&&q.paraphrase.length){h+='<div><b>Đối chiếu paraphrase:</b><ul class="paralist">'+q.paraphrase.map(p=>'<li>“'+esc(p[0])+'” ↔ “'+esc(p[1])+'”</li>').join('')+'</ul></div>';}
+    h+='</div>';
+  });
+  document.getElementById('review-'+exId).innerHTML='<div class="review">'+h+'</div>';
+  document.getElementById('score-'+exId).innerHTML='<div class="score">Điểm bài này: '+correct+'/'+total+'</div>';
+  st.graded=true;st.score=correct;st.total=total;st.correct=correct;st.wrong=total-correct;
+  st.attempt=(st.attempt||0)+1;
+  st.attemptId=SUBMIT_CFG.unit+'-'+exId+'-'+Date.now()+'-'+Math.random().toString(36).slice(2,7);
+  st.results={};
+  ex.questions.forEach(q=>{const ua=st.answers[q.n]||'';st.results[q.n]={student:ua,correct:q.key,isCorrect:ua===q.key};});
+  window.scrollTo({top:0,behavior:'smooth'});
+  updateHub();
+  submitResult(exId);
+  return {correct,total};
+}
+function submitResult(exId){
+  const ex=DATA.find(e=>e.id===exId),st=state[exId];
+  if(!st||!st.graded||!st.attemptId)return;
+  if((st.submittedAttemptIds||[]).indexOf(st.attemptId)>=0){st.submitState='sent';renderSubmitStatus(exId);return;}
+  if(!studentVal('studentName')){st.submitState='no-name';renderSubmitStatus(exId);return;}
+  st.submitState='sending';renderSubmitStatus(exId);
+  const unanswered=ex.questions.filter(q=>!(st.answers[q.n]||'')).length;
+  const payload={studentName:studentVal('studentName'),studentClass:studentVal('studentClass'),studentId:studentVal('studentId'),
+    testId:SUBMIT_CFG.unit+'-'+exId,testName:ex.testName||exId,
+    score:st.score,total:st.total,duration:'',correct:st.correct,wrong:st.wrong,
+    answers:Object.assign({meta:{attempt:st.attempt,attemptId:st.attemptId,lessonId:SUBMIT_CFG.unit,exerciseId:exId,submittedAt:new Date().toISOString(),unanswered:unanswered}},st.results)};
+  fetch(SUBMIT_CFG.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).then(()=>{
+    if(st.attemptId&&st.submittedAttemptIds.indexOf(st.attemptId)<0)st.submittedAttemptIds.push(st.attemptId);
+    st.submitState='sent';renderSubmitStatus(exId);
+  }).catch(()=>{st.submitState='failed';renderSubmitStatus(exId);});
+}
+function resendResult(exId){submitResult(exId);}
+function renderSubmitStatus(exId){
+  const st=state[exId];const box=document.getElementById('submit-'+exId);if(!box||!st)return;
+  let h='';
+  if(st.submitState==='sending')h='<div class="submitting">Đang gửi kết quả...</div>';
+  else if(st.submitState==='sent')h='<div class="submited">✓ Đã gửi kết quả</div>';
+  else if(st.submitState==='failed')h='<div class="submitfail">⚠ Không gửi được kết quả (kiểm tra mạng)</div><button class="btn btn-resend" onclick="resendResult(\''+exId+'\')">Gửi lại kết quả</button>';
+  else if(st.submitState==='no-name')h='<div class="submitwarn">Vui lòng nhập họ tên ở trang tổng để gửi kết quả cho cô.</div><button class="btn btn-resend" onclick="resendResult(\''+exId+'\')">Gửi lại kết quả</button>';
+  box.innerHTML=h;
+}
+function resetExercise(exId){
+  state[exId]={answers:{},graded:false,attempt:0,attemptId:null,submittedAttemptIds:[],submitState:'idle',results:{},score:0,total:0,correct:0,wrong:0};
+  document.querySelectorAll('#sec-'+exId+' input[type=radio]').forEach(r=>{r.checked=false;});
+  document.getElementById('review-'+exId).innerHTML='';document.getElementById('score-'+exId).innerHTML='';
+  const sb=document.getElementById('submit-'+exId);if(sb)sb.innerHTML='';
+  const ts=document.getElementById('totalscore');if(ts)ts.innerHTML='';
+  updateHub();
+}
+function gradeAll(){
+  let c=0,t=0;
+  DATA.forEach(ex=>{const r=gradeExercise(ex.id);c+=r.correct;t+=r.total;});
+  document.getElementById('totalscore').innerHTML='<div class="totalscore">TỔNG ĐIỂM 5 BÀI: '+c+'/'+t+'</div>';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function resetAll(){DATA.forEach(ex=>resetExercise(ex.id));updateHub();}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+document.addEventListener('DOMContentLoaded',function(){const sf=document.getElementById('studentform');if(sf)sf.innerHTML=studentFormHTML();updateHub();});
+</script></body></html>
