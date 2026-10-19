@@ -1,0 +1,856 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luyện tập IELTS Reading — Dạng 4: Matching Headings</title>
+<style>
+:root{font-family:'Times New Roman','Liberation Serif',serif;}
+*{box-sizing:border-box;}
+body{margin:0;background:#f6f1e7;color:#2b2b2b;line-height:1.7;}
+header.top{background:#7a1f1f;color:#fff;padding:22px 18px;text-align:center;}
+header.top h1{margin:0 0 6px;font-size:28px;}
+header.top p{margin:0;opacity:.92;}
+nav.exnav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:2px solid #7a1f1f;padding:8px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+nav.exnav a,nav.exnav button{font-family:inherit;font-size:15px;text-decoration:none;color:#7a1f1f;border:1px solid #7a1f1f;border-radius:20px;padding:6px 14px;background:#fff;cursor:pointer;}
+nav.exnav a:hover,nav.exnav button:hover{background:#7a1f1f;color:#fff;}
+main{max-width:1180px;margin:0 auto;padding:18px 14px 60px;}
+.card{background:#fff;border:1px solid #d9cfae;border-radius:10px;padding:20px 22px;margin:18px 0;box-shadow:0 2px 6px rgba(0,0,0,.06);}
+.card h2{color:#7a1f1f;margin-top:0;border-bottom:2px solid #e4d9bd;padding-bottom:8px;}
+h3{color:#7a1f1f;}
+.muted{color:#8a7a5c;font-size:14px;}
+.split{display:flex;gap:16px;align-items:stretch;}
+.panel{flex:1 1 0;border:1px solid #d9cfae;border-radius:8px;background:#fffdf6;min-width:0;}
+.panel .phead{background:#7a1f1f;color:#fff;font-weight:bold;padding:8px 12px;border-radius:7px 7px 0 0;}
+.panel .pbody{padding:12px 14px;max-height:62vh;overflow-y:auto;}
+.panel .pbody p{margin:0 0 12px;text-align:justify;}
+.qcard{border:1px solid #e0d4b3;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:#fff;}
+.qcard .stem{font-weight:bold;margin-bottom:8px;}
+.opt{display:block;padding:7px 10px;border:1px solid #e6dcc0;border-radius:6px;margin:5px 0;cursor:pointer;}
+.opt:hover{background:#faf3df;}
+.opt input{margin-right:8px;}
+.actions{margin:14px 0;display:flex;gap:10px;flex-wrap:wrap;}
+button.btn{font-family:inherit;font-size:16px;padding:9px 22px;border-radius:8px;border:none;cursor:pointer;}
+.btn-grade{background:#7a1f1f;color:#fff;}
+.btn-grade:hover{background:#5e1717;}
+.btn-reset{background:#fff;color:#7a1f1f;border:1px solid #7a1f1f !important;}
+.btn-all{background:#1f5c3d;color:#fff;}
+.review{margin-top:14px;border-top:2px dashed #c9b98f;padding-top:10px;}
+.rq{border:1px solid #e0d4b3;border-radius:8px;padding:12px 14px;margin:10px 0;background:#fffdf6;}
+.rq.correct{border-left:6px solid #1f7a3d;}
+.rq.wrong{border-left:6px solid #b3261e;}
+.rq .ansline{margin:6px 0;}
+.evidence{background:#f4eedd;border-left:4px solid #7a1f1f;padding:8px 12px;margin:8px 0;font-style:italic;}
+.explain{margin:6px 0;}
+.paralist{margin:6px 0 0 18px;padding:0;}
+.paralist li{margin:3px 0;}
+.score{font-size:20px;font-weight:bold;color:#7a1f1f;}
+.totalscore{font-size:22px;font-weight:bold;color:#1f5c3d;text-align:center;padding:12px;}
+.screen{display:none;}
+.screen.active{display:block;}
+.hubgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:6px 0 4px;}
+.excard{font-family:inherit;text-align:left;background:#fff;border:2px solid #d9cfae;border-radius:10px;padding:16px 18px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.06);font-size:16px;color:#2b2b2b;}
+.excard:hover{border-color:#7a1f1f;background:#faf3df;}
+.excard h3{margin:0 0 6px;color:#7a1f1f;font-size:18px;}
+.excard .meta{font-size:14px;color:#6a6a6a;}
+.excard .status{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:14px;font-size:14px;background:#eee5cd;color:#6b5a35;}
+.excard .status.doing{background:#b8860b;color:#fff;}
+.excard .status.done{background:#1f5c3d;color:#fff;}
+.backbtn{font-family:inherit;font-size:15px;background:#fff;color:#7a1f1f;border:1px solid #7a1f1f;border-radius:20px;padding:7px 18px;cursor:pointer;margin:4px 0 10px;}
+.backbtn:hover{background:#7a1f1f;color:#fff;}
+.studentform{background:#fff;border:2px solid #d9cfae;border-radius:10px;padding:14px 18px;margin:14px 0;}
+.studentform h3{margin:0 0 10px;color:#7a1f1f;font-size:17px;}
+.sfields{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;}
+.sfields label{font-size:14px;display:block;}
+.sfields input{font-family:inherit;font-size:16px;width:100%;padding:8px 10px;margin-top:4px;border:1px solid #c9bfa4;border-radius:6px;box-sizing:border-box;}
+.req{color:#b3261e;font-weight:bold;}
+.submitting{color:#6b5a35;font-weight:bold;margin:8px 0;}
+.submited{color:#1f5c3d;font-weight:bold;margin:8px 0;}
+.submitfail{color:#b3261e;font-weight:bold;margin:8px 0;}
+.submitwarn{color:#8a6d00;font-weight:bold;margin:8px 0;}
+.btn-resend{font-family:inherit;font-size:15px;background:#7a1f1f;color:#fff;border:none;border-radius:8px;padding:8px 18px;cursor:pointer;margin:6px 0;}
+.btn-resend:hover{background:#5c1717;}
+@media(max-width:720px){
+  .split{flex-direction:column;}
+  .panel .pbody{max-height:46vh;}
+  header.top h1{font-size:22px;}
+}
+</style></head><body>
+<header class="top"><h1>IELTS Reading — Dạng 4: MATCHING HEADINGS</h1><p>Luyện tập tương tác · Ví dụ minh họa + 6 bài tập thực hành · Nối tiêu đề với đoạn văn</p></header>
+<nav class="exnav"><button onclick="showScreen('hub')">🏠 Trang tổng</button></nav>
+<main>
+<div id="screen-hub" class="screen active">
+<section id="intro" class="card">
+<h2>Dạng 4. MATCHING HEADINGS — Nối tiêu đề với đoạn văn</h2>
+<p>Đây là dạng câu hỏi <b>siêu khó</b>: thay vì chỉ đọc một mẩu thông tin ngắn để tìm đáp án như các dạng Matching Names, T/F/NG…, bạn phải <b>đọc hiểu cả đoạn văn dài</b> để tìm đáp án chính xác.</p>
+<h3>Đặc điểm dạng bài</h3>
+<ul>
+<li>Cung cấp một loạt <b>tiêu đề (headings)</b> tương ứng với <b>nội dung chính</b> của từng đoạn văn trong bài đọc.</li>
+<li>Số lượng headings có thể <b>bằng hoặc nhiều hơn</b> số đoạn văn → sẽ có heading không được dùng với đoạn nào.</li>
+<li>Headings thường là từ, cụm từ ngắn hoặc câu ngắn.</li>
+<li>Các đoạn văn được đánh chữ <b>A, B, C…</b> lần lượt; có đoạn gồm 2–3 đoạn ngắn → cần heading bao quát ý chính của cả cụm.</li>
+<li><b>Viết SỐ (i, ii, iii…)</b> vào đáp án, không viết cả câu heading dài.</li>
+<li>Có thể có <b>một đoạn đã được làm mẫu</b>.</li>
+<li><b>Mỗi heading chỉ được sử dụng một lần duy nhất</b> → hãy gạch bỏ heading đã chọn để không làm lại lần hai.</li>
+</ul>
+<h3>Cách làm bài — 3 bước</h3>
+<ol>
+<li><b>Bước 1 — Đọc tất cả các headings, gạch chân từ khóa:</b> gạch chân từ khóa chính trong từng heading để nắm nội dung chính; dựa vào từ khóa <b>đoán nội dung</b> mà từng heading có thể đề cập (giúp đối chiếu nhanh với đoạn văn); <b>gạch bỏ heading đã được chọn cho phần ví dụ</b>.</li>
+<li><b>Bước 2 — Đọc hiểu từng đoạn văn:</b> <b>đọc toàn bộ đoạn văn</b> (không thể biết câu nào chứa nội dung chính — có thể là câu đầu, câu giữa, câu cuối hay cả đoạn); <b>đọc hiểu chứ không đọc đối chiếu từ vựng</b> (heading đã được paraphrase khác đi so với từ vựng trong đoạn); <b>đọc theo thứ tự</b> từ trên xuống dưới để giữ mạch văn; áp dụng <b>kỹ năng skim</b>, bỏ qua thông tin không quan trọng.</li>
+<li><b>Bước 3 — Đối chiếu headings và loại trừ đáp án:</b> lần lượt đối chiếu nội dung chính từng đoạn với các headings; dựa vào dữ liệu đã gạch chân ở bước 1 để tìm đáp án đúng; <b>gạch đáp án đã chọn</b> để loại trừ cho các câu tiếp theo.</li>
+</ol>
+<h3>4 mẹo làm bài</h3>
+<ol>
+<li><b>Mẹo 1 — Làm Matching Headings cùng lúc với các dạng câu hỏi khác:</b> một bài đọc luôn chứa ít nhất hai dạng câu hỏi; làm song song với T/F/NG, Gap Filling… sẽ tiết kiệm thời gian đáng kể.</li>
+<li><b>Mẹo 2 — Đọc theo thứ tự từ đoạn đầu đến đoạn cuối:</b> đọc đoạn ngắn trước, đoạn dài sau sẽ phá vỡ mạch văn khiến bài khó hiểu hơn; đọc theo thứ tự thì dù gặp đoạn khó vẫn có thể bỏ qua mà giữ được mạch văn toàn bài.</li>
+<li><b>Mẹo 3 — Chuyển sang đoạn tiếp theo nếu dành quá 1'30"–2' cho một câu:</b> thời gian là yếu tố then chốt trong IELTS Reading; quay lại sau nếu còn thời gian.</li>
+<li><b>Mẹo 4 — Loại luôn 2 đáp án có nghĩa gần giống nhau</b> (với bài có nhiều headings hơn số đoạn): khi đã chọn 1 trong 2 đáp án gần nghĩa là đúng, hãy loại luôn cả đáp án gần nghĩa còn lại — vì nó chính là bẫy, sẽ không đúng với đoạn nào.</li>
+</ol>
+<p class="muted">Nội dung tóm tắt trung thực từ tài liệu "Dạng 4. DẠNG MATCHING HEADINGS" (IELTS Thanh Loan).</p>
+</section>
+<div id="studentform"></div><div class="card"><h2>Chọn mục để học</h2><div class="hubgrid"><button class="excard" onclick="showScreen('example')"><h3>📖 Ví dụ minh họa</h3><div class="meta">Why companies should welcome disorder (Cambridge 14) · 8 câu 27–34 có đáp án mẫu + lập luận</div><span class="status">Xem đáp án mẫu</span></button><button class="excard" onclick="showScreen('ex1')"><h3>✏️ Bài 1: Pedestrians only</h3><div class="meta">Câu 1–5 · 5 câu hỏi · Nối tiêu đề với đoạn văn</div><span class="status" id="status-ex1">Chưa làm</span></button><button class="excard" onclick="showScreen('ex2')"><h3>✏️ Bài 2: The rain makers</h3><div class="meta">Câu 1–6 · 6 câu hỏi · Nối tiêu đề với đoạn văn</div><span class="status" id="status-ex2">Chưa làm</span></button><button class="excard" onclick="showScreen('ex3')"><h3>✏️ Bài 3: Whale communication</h3><div class="meta">Câu 1–6 · 6 câu hỏi · Nối tiêu đề với đoạn văn</div><span class="status" id="status-ex3">Chưa làm</span></button><button class="excard" onclick="showScreen('ex4')"><h3>✏️ Bài 4: Organic food: why?</h3><div class="meta">Câu 2–7 · 6 câu hỏi · Nối tiêu đề với đoạn văn</div><span class="status" id="status-ex4">Chưa làm</span></button><button class="excard" onclick="showScreen('ex5')"><h3>✏️ Bài 5: Learning color words</h3><div class="meta">Câu 1–4 · 4 câu hỏi · Nối tiêu đề với đoạn văn</div><span class="status" id="status-ex5">Chưa làm</span></button><button class="excard" onclick="showScreen('practice')"><h3>✏️ Bài tập thực hành: Gold Dusters</h3><div class="meta">Câu 15–21 · 7 câu hỏi · Nối tiêu đề với đoạn văn</div><span class="status" id="status-practice">Chưa làm</span></button></div><div class="actions"><button class="btn btn-all" onclick="gradeAll()">📝 Chấm tất cả bài tập</button><button class="btn btn-reset" onclick="resetAll()">🔄 Làm lại tất cả</button></div><div id="totalscore"></div></div></div>
+<div id="screen-example" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section class="card">
+<h2>Ví dụ minh họa: Why companies should welcome disorder</h2>
+<p><i>Choose the correct heading for each section from the list of headings below. Write the correct number, i-ix, in boxes 27-34 on your answer sheet.</i> (Nguồn: Cambridge 14 – Test 2 – Passage 3; đáp án và lập luận theo tài liệu.)</p>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc</div><div class="pbody">
+<h3 style="margin-top:0">Why companies should welcome disorder</h3>
+<p><b>A.</b> Organisation is big business. Whether it is of our lives - all those inboxes and calendars - or how companies are structured, a multi-billion dollar industry helps to meet this need. We have more strategies for time management, project management and self-organisation than at any other time in human history. We are told that we ought to organise our company, our home life, our week, our day and even our sleep, all as a means to becoming more productive. Every week, countless seminars and workshops take place around the world to tell a paying public that they ought to structure their lives in order to achieve this. This rhetoric has also crept into the thinking of business leaders and entrepreneurs, much to the delight of self-proclaimed perfectionists with the need to get everything right. The number of business schools and graduates has massively increased over the past 50 years, essentially teaching people how to organise well.</p>
+<p><b>B.</b> Ironically, however, the number of businesses that fail has also steadily increased. Work-related stress has increased. A large proportion of workers from all demographics claim to be dissatisfied with the way their work is structured and the way they are managed. This begs the question: what has gone wrong? Why is it that on paper the drive for organisation seems a sure shot for increasing productivity, but in reality falls well short of what is expected?</p>
+<p><b>C.</b> This has been a problem for a while now. Frederick Taylor was one of the forefathers of scientific management. Writing in the first half of the 20th century, he designed a number of principles to improve the efficiency of the work process, which have since become widespread in modern companies. So the approach has been around for a while.</p>
+<p><b>D.</b> New research suggests that this obsession with efficiency is misguided. The problem is not necessarily the management theories or strategies we use to organise our work; it&#x27;s the basic assumptions we hold in approaching how we work. Here it&#x27;s the assumption that order is a necessary condition for productivity. This assumption has also fostered the idea that disorder must be detrimental to organisational productivity. The result is that businesses and people spend time and money organising themselves for the sake of organising, rather than actually looking at the end goal and usefulness of such an effort.</p>
+<p><b>E.</b> What&#x27;s more, recent studies show that order actually has diminishing returns. Order does increase productivity to a certain extent, but eventually the usefulness of the process of organisation, and the benefit it yields, reduce until the point where any further increase in order reduces productivity. Some argue that in a business, if the cost of formally structuring something outweighs the benefit of doing it, then that thing ought not to be formally structured. Instead, the resources involved can be better used elsewhere.</p>
+<p><b>F.</b> In fact, research shows that, when innovating, the best approach is to create an environment devoid of structure and hierarchy and enable everyone involved to engage as one organic group. These environments can lead to new solutions that, under conventionally structured environments (filled with bottlenecks in terms of information flow, power structures, rules, and routines) would never be reached.</p>
+<p><b>G.</b> In recent times companies have slowly started to embrace this disorganisation. Many of them embrace it in terms of perception (embracing the idea of disorder, as opposed to fearing it) and in terms of process (putting mechanisms in place to reduce structure). For example, Oticon, a large Danish manufacturer of hearing aids, used what it called a &#x27;spaghetti&#x27; structure in order to reduce the organisation&#x27;s rigid hierarchies. This involved scrapping formal job titles and giving staff huge amounts of ownership over their own time and projects. This approach proved to be highly successful initially, with clear improvements in worker productivity in all facets of the business. In similar fashion, the former chairman of General Electric embraced disorganisation, putting forward the idea of the &#x27;boundaryless&#x27; organisation. Again, it involves breaking down the barriers between different parts of a company and encouraging virtual collaboration and flexible working. Google and a number of other tech companies have embraced (at least in part) these kinds of flexible structures, facilitated by technology and strong company values which glue people together.</p>
+<p><b>H.</b> A word of warning to others thinking of jumping on this bandwagon: the evidence so far suggests disorder, much like order, also seems to have diminishing utility, and can also have detrimental effects on performance if overused. Like order, disorder should be embraced only so far as it is useful. But we should not fear it - nor venerate one over the other. This research also shows that we should continually question whether or not our existing assumptions work.</p>
+</div></div>
+<div class="panel"><div class="phead">📋 Headings & đáp án mẫu</div><div class="pbody">
+<p><b>List of Headings</b></p><ul>
+<li><b>i.</b> Complaints about the impact of a certain approach</li>
+<li><b>ii.</b> Fundamental beliefs that are in fact incorrect</li>
+<li><b>iii.</b> Early recommendations concerning business activities</li>
+<li><b>iv.</b> Organisations that put a new approach into practice</li>
+<li><b>v.</b> Companies that have suffered from changing their approach</li>
+<li><b>vi.</b> What people are increasingly expected to do</li>
+<li><b>vii.</b> How to achieve outcomes that are currently impossible</li>
+<li><b>viii.</b> Neither approach guarantees continuous improvement</li>
+<li><b>ix.</b> Evidence that a certain approach can have more disadvantages than advantages</li>
+</ul><hr>
+<div class="rq">
+<div class="stem"><b>Câu 27.</b> Section A → Đáp án: <b>vi. What people are increasingly expected to do</b></div>
+<div class="explain"><b>Lập luận:</b> Đoạn A ngập lời khuyên &quot;ought to organise&quot; mọi mặt cuộc sống (công ty, gia đình, tuần, ngày, cả giấc ngủ) cùng vô số hội thảo dạy cách tổ chức → đây là trào lưu ngày càng nhiều người làm theo (what people are increasingly expected to do).</div>
+</div>
+<div class="rq">
+<div class="stem"><b>Câu 28.</b> Section B → Đáp án: <b>i. Complaints about the impact of a certain approach</b></div>
+<div class="explain"><b>Lập luận:</b> Doanh nghiệp phá sản &quot;steadily increased&quot;, stress tăng, người lao động &quot;dissatisfied with the way their work is structured&quot; → những lời phàn nàn về ảnh hưởng của phương pháp tổ chức (order = a certain approach).</div>
+</div>
+<div class="rq">
+<div class="stem"><b>Câu 29.</b> Section C → Đáp án: <b>iii. Early recommendations concerning business activities</b></div>
+<div class="explain"><b>Lập luận:</b> Frederick Taylor đầu thế kỷ 20 &quot;designed a number of principles to improve the efficiency of the work process&quot; → những đề xuất sớm (early recommendations) về hoạt động doanh nghiệp.</div>
+</div>
+<div class="rq">
+<div class="stem"><b>Câu 30.</b> Section D → Đáp án: <b>ii. Fundamental beliefs that are in fact incorrect</b></div>
+<div class="explain"><b>Lập luận:</b> &quot;This obsession with efficiency is misguided&quot; — niềm tin cơ bản (basic assumptions) rằng order là điều kiện cần cho năng suất → niềm tin sai lầm (incorrect = misguided).</div>
+</div>
+<div class="rq">
+<div class="stem"><b>Câu 31.</b> Section E → Đáp án: <b>ix. Evidence that a certain approach can have more disadvantages than advantages</b></div>
+<div class="explain"><b>Lập luận:</b> Order &quot;has diminishing returns&quot;; &quot;cost of formally structuring something outweighs the benefit&quot; → bằng chứng phương pháp có hại nhiều hơn lợi (more disadvantages than advantages).</div>
+</div>
+<div class="rq">
+<div class="stem"><b>Câu 32.</b> Section F → Đáp án: <b>vii. How to achieve outcomes that are currently impossible</b> (ví dụ có sẵn)</div>
+<div class="explain"><b>Lập luận:</b> Đáp án mẫu có sẵn: môi trường không cấu trúc tạo ra giải pháp mà môi trường cấu trúc thông thường &quot;would never be reached&quot; → đạt được điều hiện tại là không thể.</div>
+</div>
+<div class="rq">
+<div class="stem"><b>Câu 33.</b> Section G → Đáp án: <b>iv. Organisations that put a new approach into practice</b></div>
+<div class="explain"><b>Lập luận:</b> Oticon (&#x27;spaghetti&#x27; structure), General Electric (&#x27;boundaryless&#x27;), Google áp dụng disorder thành công → các tổ chức đưa phương pháp mới vào thực tiễn. Loại v vì &quot;suffer from&quot; mang nghĩa tiêu cực, trong khi các ví dụ đều thành công.</div>
+</div>
+<div class="rq">
+<div class="stem"><b>Câu 34.</b> Section H → Đáp án: <b>viii. Neither approach guarantees continuous improvement</b></div>
+<div class="explain"><b>Lập luận:</b> &quot;Disorder, much like order, also seems to have diminishing utility&quot; → cả hai phương pháp đều không đảm bảo hiệu quả liên tục (neither approach guarantees continuous improvement).</div>
+</div>
+</div></div>
+</div></section></div>
+<div id="screen-ex1" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex1" class="card">
+<h2>Exercise 1: Pedestrians only</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Pedestrians only</h3>
+<p><i>How traffic-free shopping streets developed</i></p>
+<p><b>A.</b> The concept of traffic-free shopping areas goes back a long time. During the Middle Ages, traffic-free shopping areas known as souks were built in Middle Eastern countries to allow people to shop in comfort and, more importantly, safety. As far back as 2,000 years ago, road traffic was banned from central Rome during the day to allow for the free movement of pedestrians, and was only allowed in at night when shops and markets had closed for the day. In most other cities, however, pedestrians were forced to share the streets with horses, coaches and, later, with cars and other motorised vehicles.</p>
+<p><b>B.</b> The modern, traffic-free shopping street was born in Europe in the 1960s, when both city populations and car ownership increased rapidly. Dirty exhaust fumes from cars and the risks involved in crossing the road were beginning to make shopping an unpleasant and dangerous experience. Many believed the time was right for experimenting with car-free streets, and shopping areas seemed the best place to start.</p>
+<p><b>C.</b> At first, there was resistance from shopkeepers. They believed that such a move would be bad for business. They argued that people would avoid streets if they were unable to get to them in their cars. When the first streets in Europe were closed to traffic, there were even noisy demonstrations, as many shopkeepers predicted they would lose customers.</p>
+<p><b>D.</b> However, research carried out afterwards in several European cities revealed some unexpected statistics. In Munich, Cologne and Hamburg, visitors to shopping areas increased by 50 percent. On Copenhagen&#x27;s main shopping street, shopkeepers reported sales increases of 25-40 percent. Shopkeepers in Minneapolis, USA, were so impressed when they learnt this that they even offered to pay for the construction and maintenance costs of their own traffic-free streets.</p>
+<p><b>E.</b> With the arrival of the traffic-free shopping street, many shops, especially those selling things like clothes, food and smaller luxury items, prospered. Unfortunately, it wasn&#x27;t good news for everyone, as shops selling furniture and larger electrical appliances actually saw their sales drop. Many of these were forced to move elsewhere, away from the city centre. Today they are a common feature on the outskirts of towns and cities, often situated in out-of-town retail zones with their own car parks and other local facilities.</p>
+<p class="muted">Source: Complete IELTS band 4-5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Now match the headings i-vii below with paragraphs A-E in the passage. There are two headings that you do not need.</i></p>
+<p><b>List of Headings</b></p><ul>
+<li>i. Facing local opposition</li>
+<li>ii. Some reasons for success</li>
+<li>iii. Winners and losers</li>
+<li>iv. A need for change</li>
+<li>v. An experiment that went wrong</li>
+<li>vi. An idea from ancient history</li>
+<li>vii. North America learns from Europe</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. Section A</div>
+<label class="opt"><input type="radio" name="ex1-q1" value="i" onchange="onPick('ex1',1,'i')">i. Facing local opposition</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="ii" onchange="onPick('ex1',1,'ii')">ii. Some reasons for success</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="iii" onchange="onPick('ex1',1,'iii')">iii. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="iv" onchange="onPick('ex1',1,'iv')">iv. A need for change</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="v" onchange="onPick('ex1',1,'v')">v. An experiment that went wrong</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="vi" onchange="onPick('ex1',1,'vi')">vi. An idea from ancient history</label>
+<label class="opt"><input type="radio" name="ex1-q1" value="vii" onchange="onPick('ex1',1,'vii')">vii. North America learns from Europe</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Section B</div>
+<label class="opt"><input type="radio" name="ex1-q2" value="i" onchange="onPick('ex1',2,'i')">i. Facing local opposition</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="ii" onchange="onPick('ex1',2,'ii')">ii. Some reasons for success</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="iii" onchange="onPick('ex1',2,'iii')">iii. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="iv" onchange="onPick('ex1',2,'iv')">iv. A need for change</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="v" onchange="onPick('ex1',2,'v')">v. An experiment that went wrong</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="vi" onchange="onPick('ex1',2,'vi')">vi. An idea from ancient history</label>
+<label class="opt"><input type="radio" name="ex1-q2" value="vii" onchange="onPick('ex1',2,'vii')">vii. North America learns from Europe</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Section C</div>
+<label class="opt"><input type="radio" name="ex1-q3" value="i" onchange="onPick('ex1',3,'i')">i. Facing local opposition</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="ii" onchange="onPick('ex1',3,'ii')">ii. Some reasons for success</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="iii" onchange="onPick('ex1',3,'iii')">iii. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="iv" onchange="onPick('ex1',3,'iv')">iv. A need for change</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="v" onchange="onPick('ex1',3,'v')">v. An experiment that went wrong</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="vi" onchange="onPick('ex1',3,'vi')">vi. An idea from ancient history</label>
+<label class="opt"><input type="radio" name="ex1-q3" value="vii" onchange="onPick('ex1',3,'vii')">vii. North America learns from Europe</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Section D</div>
+<label class="opt"><input type="radio" name="ex1-q4" value="i" onchange="onPick('ex1',4,'i')">i. Facing local opposition</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="ii" onchange="onPick('ex1',4,'ii')">ii. Some reasons for success</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="iii" onchange="onPick('ex1',4,'iii')">iii. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="iv" onchange="onPick('ex1',4,'iv')">iv. A need for change</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="v" onchange="onPick('ex1',4,'v')">v. An experiment that went wrong</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="vi" onchange="onPick('ex1',4,'vi')">vi. An idea from ancient history</label>
+<label class="opt"><input type="radio" name="ex1-q4" value="vii" onchange="onPick('ex1',4,'vii')">vii. North America learns from Europe</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 5. Section E</div>
+<label class="opt"><input type="radio" name="ex1-q5" value="i" onchange="onPick('ex1',5,'i')">i. Facing local opposition</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="ii" onchange="onPick('ex1',5,'ii')">ii. Some reasons for success</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="iii" onchange="onPick('ex1',5,'iii')">iii. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="iv" onchange="onPick('ex1',5,'iv')">iv. A need for change</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="v" onchange="onPick('ex1',5,'v')">v. An experiment that went wrong</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="vi" onchange="onPick('ex1',5,'vi')">vi. An idea from ancient history</label>
+<label class="opt"><input type="radio" name="ex1-q5" value="vii" onchange="onPick('ex1',5,'vii')">vii. North America learns from Europe</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex1')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex1')">Làm lại bài này</button></div>
+<div id="score-ex1"></div><div id="submit-ex1"></div><div id="review-ex1"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex2" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex2" class="card">
+<h2>Exercise 2: The rain makers</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">The rain makers</h3>
+<p><i>Science and technology work with nature to bring rain when and where it is needed</i></p>
+<p><b>A.</b> Wheat farmer Gang Liu is a worried man. The annual rains have not arrived, and there is a danger that unless there is substantial rainfall soon, his annual wheat crop will fail. As he looks anxiously at the clouds which promise rain but are failing to deliver it, there is a sudden loud roar, and from fields for miles around, hundreds of small rockets are fired into the clouds. Within twenty minutes, the farms around the eastern Chinese city of Luohe are experiencing their first rain for many weeks. Gang Liu&#x27;s valuable wheat has been saved, thanks to a technique known as &#x27;cloud seeding&#x27;, in which the chemical silver iodide (Agl) is introduced into clouds. This causes the tiny drops of moisture in the clouds to turn to ice. These tiny ice particles join until they become heavy enough to fall from the sky, turning into rain as they melt.</p>
+<p><b>B.</b> But did cloud seeding really cause the rain in Luohe to fall, or was just a coincidence? Experts often question whether cloud seeding actually works. It is hard to tell how effective cloud seeding actually is, they say, as it might have rained anyway, without human intervention. But this has not stopped many governments and organisations from trying. There are currently 150 weather-modifying projects taking place in more than 40 countries. Not all of them are aimed at creating rain. The Eastlund Scientific Enterprises Corporation in the USA, for example, is experimenting with firing microwaves into clouds to prevent the tornadoes which cause enormous damage to the country every year. In Russia, experiments have been carried out to make sure the sun shines during important national events.</p>
+<p><b>C.</b> However, it is rainmaking that dominates the research programmes. In many of these, researchers are using trials in which some clouds are &#x27;seeded&#x27; while others are not, and both groups are monitored. Arlen Huggins of the Desert Research Institute is leading a research project in Australia. Weather-monitoring technology is so good nowadays, he says, that we can measure clouds mụch more effectively, even from the inside. As a result, we now know mụch more about the effect humans can have on the weather. What Huggins&#x27; team has discovered so far is promising. They believe that cloud seeding does work, although there are still two years of the six-year project left to go.</p>
+<p><b>D.</b> In China, where the majority of cloud-seeding operations take place, weather-modification authorities use army rockets to fire silver-iodide particles into the clouds. 59,000 staff working for the China Meteorological Administration (CMA) are equipped with 7,115 army cannons which, in 2006, were used to fire a million silver-Iodide rockets into the atmosphere. This costs over $100 million a year, although the CMA claims the results are worth the expense. Between 1999 and 2006, they say, cloud seeding produced 250 billion metric tonnes of rain and prevented thousands of farmers from losing their crops.</p>
+<p><b>E.</b> &#x27;We want to understand what makes clouds rain&#x27;, says Philip Brown of the UK Meteorological office, explaining why so much time, effort and money are being invested. &quot;But there is a more powerful economic reason. A lot of countries around the world are at risk from drought, and governments will try anything to make sure that doesn&#x27;t happen, even if the scientific evidence is weak. The potential economic value is greater than the scientific value. Making it rain might allow you to keep agriculture going where, without human intervention, it might fail&quot;.</p>
+<p><b>F.</b> Some people are concerned, however, that altering the weather can have negative consequences. Leonard Barrie, director of the research department at the World Meteorological Organisation in Geneva, explains why. All areas of weather modification are still very controversial. Some people think that diverting water for irrigation benefits some people, but is a disadvantage to others. Someone in one area will get more water, but as a result, someone somewhere else could get less. His fears may be justified. Recently, the town of Zhoukou in China&#x27;s Henan province accused neighbouring town Pingdingshang of &#x27;stealing&#x27; rain from clouds that were due to pass over its own farms, prompting what may be the world very first documented incident of &#x27;rain rage&#x27;.</p>
+<p class="muted">Source: Complete IELTS band 4-5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Questions 1-6: The reading passage has six paragraphs, A-F. Choose the correct heading for each paragraph from the list of headings below.</i></p>
+<p><b>List of Headings</b></p><ul>
+<li>i. Making peaceful use of a military weapon</li>
+<li>ii. How modifying the weather has changed the world</li>
+<li>iii. What is prompting this research?</li>
+<li>iv. A period of drought comes to an end</li>
+<li>v. An old solution to a new problem</li>
+<li>vi. Winners and losers</li>
+<li>vii. Tests provide encouraging results</li>
+<li>viii. A waste of money</li>
+<li>ix. Global attempts to change the weather</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. Section A</div>
+<label class="opt"><input type="radio" name="ex2-q1" value="i" onchange="onPick('ex2',1,'i')">i. Making peaceful use of a military weapon</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="ii" onchange="onPick('ex2',1,'ii')">ii. How modifying the weather has changed the world</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="iii" onchange="onPick('ex2',1,'iii')">iii. What is prompting this research?</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="iv" onchange="onPick('ex2',1,'iv')">iv. A period of drought comes to an end</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="v" onchange="onPick('ex2',1,'v')">v. An old solution to a new problem</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="vi" onchange="onPick('ex2',1,'vi')">vi. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="vii" onchange="onPick('ex2',1,'vii')">vii. Tests provide encouraging results</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="viii" onchange="onPick('ex2',1,'viii')">viii. A waste of money</label>
+<label class="opt"><input type="radio" name="ex2-q1" value="ix" onchange="onPick('ex2',1,'ix')">ix. Global attempts to change the weather</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Section B</div>
+<label class="opt"><input type="radio" name="ex2-q2" value="i" onchange="onPick('ex2',2,'i')">i. Making peaceful use of a military weapon</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="ii" onchange="onPick('ex2',2,'ii')">ii. How modifying the weather has changed the world</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="iii" onchange="onPick('ex2',2,'iii')">iii. What is prompting this research?</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="iv" onchange="onPick('ex2',2,'iv')">iv. A period of drought comes to an end</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="v" onchange="onPick('ex2',2,'v')">v. An old solution to a new problem</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="vi" onchange="onPick('ex2',2,'vi')">vi. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="vii" onchange="onPick('ex2',2,'vii')">vii. Tests provide encouraging results</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="viii" onchange="onPick('ex2',2,'viii')">viii. A waste of money</label>
+<label class="opt"><input type="radio" name="ex2-q2" value="ix" onchange="onPick('ex2',2,'ix')">ix. Global attempts to change the weather</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Section C</div>
+<label class="opt"><input type="radio" name="ex2-q3" value="i" onchange="onPick('ex2',3,'i')">i. Making peaceful use of a military weapon</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="ii" onchange="onPick('ex2',3,'ii')">ii. How modifying the weather has changed the world</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="iii" onchange="onPick('ex2',3,'iii')">iii. What is prompting this research?</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="iv" onchange="onPick('ex2',3,'iv')">iv. A period of drought comes to an end</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="v" onchange="onPick('ex2',3,'v')">v. An old solution to a new problem</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="vi" onchange="onPick('ex2',3,'vi')">vi. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="vii" onchange="onPick('ex2',3,'vii')">vii. Tests provide encouraging results</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="viii" onchange="onPick('ex2',3,'viii')">viii. A waste of money</label>
+<label class="opt"><input type="radio" name="ex2-q3" value="ix" onchange="onPick('ex2',3,'ix')">ix. Global attempts to change the weather</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Section D</div>
+<label class="opt"><input type="radio" name="ex2-q4" value="i" onchange="onPick('ex2',4,'i')">i. Making peaceful use of a military weapon</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="ii" onchange="onPick('ex2',4,'ii')">ii. How modifying the weather has changed the world</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="iii" onchange="onPick('ex2',4,'iii')">iii. What is prompting this research?</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="iv" onchange="onPick('ex2',4,'iv')">iv. A period of drought comes to an end</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="v" onchange="onPick('ex2',4,'v')">v. An old solution to a new problem</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="vi" onchange="onPick('ex2',4,'vi')">vi. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="vii" onchange="onPick('ex2',4,'vii')">vii. Tests provide encouraging results</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="viii" onchange="onPick('ex2',4,'viii')">viii. A waste of money</label>
+<label class="opt"><input type="radio" name="ex2-q4" value="ix" onchange="onPick('ex2',4,'ix')">ix. Global attempts to change the weather</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 5. Section E</div>
+<label class="opt"><input type="radio" name="ex2-q5" value="i" onchange="onPick('ex2',5,'i')">i. Making peaceful use of a military weapon</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="ii" onchange="onPick('ex2',5,'ii')">ii. How modifying the weather has changed the world</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="iii" onchange="onPick('ex2',5,'iii')">iii. What is prompting this research?</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="iv" onchange="onPick('ex2',5,'iv')">iv. A period of drought comes to an end</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="v" onchange="onPick('ex2',5,'v')">v. An old solution to a new problem</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="vi" onchange="onPick('ex2',5,'vi')">vi. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="vii" onchange="onPick('ex2',5,'vii')">vii. Tests provide encouraging results</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="viii" onchange="onPick('ex2',5,'viii')">viii. A waste of money</label>
+<label class="opt"><input type="radio" name="ex2-q5" value="ix" onchange="onPick('ex2',5,'ix')">ix. Global attempts to change the weather</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 6. Section F</div>
+<label class="opt"><input type="radio" name="ex2-q6" value="i" onchange="onPick('ex2',6,'i')">i. Making peaceful use of a military weapon</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="ii" onchange="onPick('ex2',6,'ii')">ii. How modifying the weather has changed the world</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="iii" onchange="onPick('ex2',6,'iii')">iii. What is prompting this research?</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="iv" onchange="onPick('ex2',6,'iv')">iv. A period of drought comes to an end</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="v" onchange="onPick('ex2',6,'v')">v. An old solution to a new problem</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="vi" onchange="onPick('ex2',6,'vi')">vi. Winners and losers</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="vii" onchange="onPick('ex2',6,'vii')">vii. Tests provide encouraging results</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="viii" onchange="onPick('ex2',6,'viii')">viii. A waste of money</label>
+<label class="opt"><input type="radio" name="ex2-q6" value="ix" onchange="onPick('ex2',6,'ix')">ix. Global attempts to change the weather</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex2')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex2')">Làm lại bài này</button></div>
+<div id="score-ex2"></div><div id="submit-ex2"></div><div id="review-ex2"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex3" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex3" class="card">
+<h2>Exercise 3: Whale communication</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Whale communication</h3>
+<p><b>A.</b> It is only comparatively recently that we have become aware of the hauntingly beautiful sounds made by humpback whales. The hydrophone, a microphone that can be used in water, was developed by the British scientist Ernest Rutherford, and is particularly good at detecting the presence of submarines underwater. During the Cold War, a Bermudian, Frank Watlington was working for the US government, and it was his job to use hydrophones to listen out for Russian submarines. While he was doing this, Watlington noticed that humpback whales appeared to &#x27;sing&#x27;. Later, Watlington&#x27;s work was taken up by two other researchers, Roger Payne and Scott McVay, who studied the nature of these humpback whale &#x27;songs&#x27;. They found that the various sounds produced by the whale formed a song which lasts for about 30 minutes and is then repeated by the whale for hours or even days.</p>
+<p><b>B.</b> Scientists believe there are two main reasons for whales to make sounds: echolocation, so that the whales know what objects (and perhaps food) are around them; and communication. Whales are capable of communicating to other whales over huge distances. Sound waves travel faster through water (around 1.5 kilometre per second) than through air, and the sound of a whale can travel thousands of kilometres through the oceans.</p>
+<p><b>C.</b> Many different species of whale are capable of making noises and some of them (as well as dolphins and porpoises) are believed to use echolocation. Some whales look for food, such as squid, down to a depth of 1.5 kilometres, and at that depth there is virtually no light at all. Without being able to locate their food, the whales are going to go hungry. The whales send out series of clicks and listen out for the echo of the sound. From this, the whale is able to work out what is around it and can respond accordingly. The system whales use is highly complex, but it is similar to the way that you can tell direction of sound. You have two ears and when a sound is made, the sound reaches one ear a fraction of a second before the other. From this information, your brain can work out the direction of the sound.</p>
+<p><b>D.</b> In addition to echolocation, some whales, most notably the humpback whale, are capable of producing a range of notes which appear to be a form of communication. Humpback whales in one school (as groups of whales are known) tend to sing virtually the same song. Perhaps like football supporters they are demonstrating group identity, showing that they belong to the same school. Other schools, particularly those found in other oceans, sing songs which are quite different. It is also quite likely that the songs play a role in courtship. It is generally the males that sing, so perhaps they are also trying to attract females.</p>
+<p><b>E.</b> For millions of years, whales have swum in the great oceans of the world and only recently have they had to contend with a predator: man. In the 18th and 19th centuries, many countries had fleets of ships which set out to bring back whales. The 20th century saw the development of factory ships which were capable of killing and processing thousands of whales. In the 1930s, over 50,000 whales were killed annually. It wasn&#x27;t until 1986 that a moratorium was agreed to stop whale hunting, and scientists hope that the number of whales will recover. So can the whales of the world now cruise about without a care in the world? Sadly not. The growth of trade in the world has meant that there are now more ships, particularly large container ships, than ever before. In fact, the Worldwide Fund for Nature (WWF) says that large numbers of northern right whales are killed in collision with ships. But it is not only the physical danger that ships present. The loud noises of ships&#x27; engines are very likely to disturb the whales, and the WWF have called for shipping restrictions in certain areas.</p>
+<p><b>F.</b> In recent years, there have been many cases of whales dying on beaches. Could the reason for these tragedies have something to do with the noise pollution that these majestic creatures have to live with? There is no definite answer to the question, but it has attracted considerable research, and findings seem to point to man&#x27;s industrial activities in the ocean. With an ever-growing need for oil, more and more drilling takes place offshore. To assess the likelihood of the presence of oil, seismologists use sonar to work out the underlying geology. The sounds used in such tests are believed by some people to have a highly damaging effect on whales, either simply disrupting their method of communication, or, some scientists believe, actually killing them. With an ever-increasing human population and dwindling resources, whales face an uncertain future. While it is unlikely that we will ever know exactly why whales producing their whale songs, the world will be a much poorer place without them.</p>
+<p class="muted">Source: IELTS Advantage - Reading skills</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>The text has six untitled paragraphs A-F. Choose the correct heading for each paragraph from the list of headings below (i-ix).</i></p>
+<p><b>List of Headings</b></p><ul>
+<li>i. Musical futures</li>
+<li>ii. Sad mystery to solve</li>
+<li>iii. Surprising discoveries</li>
+<li>iv. The inventiveness of song</li>
+<li>v. Singing effects</li>
+<li>vi. Threats to survival</li>
+<li>vii. Singing for supper</li>
+<li>viii. Varieties of song</li>
+<li>ix. The significance of song</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. Section A</div>
+<label class="opt"><input type="radio" name="ex3-q1" value="i" onchange="onPick('ex3',1,'i')">i. Musical futures</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="ii" onchange="onPick('ex3',1,'ii')">ii. Sad mystery to solve</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="iii" onchange="onPick('ex3',1,'iii')">iii. Surprising discoveries</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="iv" onchange="onPick('ex3',1,'iv')">iv. The inventiveness of song</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="v" onchange="onPick('ex3',1,'v')">v. Singing effects</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="vi" onchange="onPick('ex3',1,'vi')">vi. Threats to survival</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="vii" onchange="onPick('ex3',1,'vii')">vii. Singing for supper</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="viii" onchange="onPick('ex3',1,'viii')">viii. Varieties of song</label>
+<label class="opt"><input type="radio" name="ex3-q1" value="ix" onchange="onPick('ex3',1,'ix')">ix. The significance of song</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Section B</div>
+<label class="opt"><input type="radio" name="ex3-q2" value="i" onchange="onPick('ex3',2,'i')">i. Musical futures</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="ii" onchange="onPick('ex3',2,'ii')">ii. Sad mystery to solve</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="iii" onchange="onPick('ex3',2,'iii')">iii. Surprising discoveries</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="iv" onchange="onPick('ex3',2,'iv')">iv. The inventiveness of song</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="v" onchange="onPick('ex3',2,'v')">v. Singing effects</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="vi" onchange="onPick('ex3',2,'vi')">vi. Threats to survival</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="vii" onchange="onPick('ex3',2,'vii')">vii. Singing for supper</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="viii" onchange="onPick('ex3',2,'viii')">viii. Varieties of song</label>
+<label class="opt"><input type="radio" name="ex3-q2" value="ix" onchange="onPick('ex3',2,'ix')">ix. The significance of song</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Section C</div>
+<label class="opt"><input type="radio" name="ex3-q3" value="i" onchange="onPick('ex3',3,'i')">i. Musical futures</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="ii" onchange="onPick('ex3',3,'ii')">ii. Sad mystery to solve</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="iii" onchange="onPick('ex3',3,'iii')">iii. Surprising discoveries</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="iv" onchange="onPick('ex3',3,'iv')">iv. The inventiveness of song</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="v" onchange="onPick('ex3',3,'v')">v. Singing effects</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="vi" onchange="onPick('ex3',3,'vi')">vi. Threats to survival</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="vii" onchange="onPick('ex3',3,'vii')">vii. Singing for supper</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="viii" onchange="onPick('ex3',3,'viii')">viii. Varieties of song</label>
+<label class="opt"><input type="radio" name="ex3-q3" value="ix" onchange="onPick('ex3',3,'ix')">ix. The significance of song</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Section D</div>
+<label class="opt"><input type="radio" name="ex3-q4" value="i" onchange="onPick('ex3',4,'i')">i. Musical futures</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="ii" onchange="onPick('ex3',4,'ii')">ii. Sad mystery to solve</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="iii" onchange="onPick('ex3',4,'iii')">iii. Surprising discoveries</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="iv" onchange="onPick('ex3',4,'iv')">iv. The inventiveness of song</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="v" onchange="onPick('ex3',4,'v')">v. Singing effects</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="vi" onchange="onPick('ex3',4,'vi')">vi. Threats to survival</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="vii" onchange="onPick('ex3',4,'vii')">vii. Singing for supper</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="viii" onchange="onPick('ex3',4,'viii')">viii. Varieties of song</label>
+<label class="opt"><input type="radio" name="ex3-q4" value="ix" onchange="onPick('ex3',4,'ix')">ix. The significance of song</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 5. Section E</div>
+<label class="opt"><input type="radio" name="ex3-q5" value="i" onchange="onPick('ex3',5,'i')">i. Musical futures</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="ii" onchange="onPick('ex3',5,'ii')">ii. Sad mystery to solve</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="iii" onchange="onPick('ex3',5,'iii')">iii. Surprising discoveries</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="iv" onchange="onPick('ex3',5,'iv')">iv. The inventiveness of song</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="v" onchange="onPick('ex3',5,'v')">v. Singing effects</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="vi" onchange="onPick('ex3',5,'vi')">vi. Threats to survival</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="vii" onchange="onPick('ex3',5,'vii')">vii. Singing for supper</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="viii" onchange="onPick('ex3',5,'viii')">viii. Varieties of song</label>
+<label class="opt"><input type="radio" name="ex3-q5" value="ix" onchange="onPick('ex3',5,'ix')">ix. The significance of song</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 6. Section F</div>
+<label class="opt"><input type="radio" name="ex3-q6" value="i" onchange="onPick('ex3',6,'i')">i. Musical futures</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="ii" onchange="onPick('ex3',6,'ii')">ii. Sad mystery to solve</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="iii" onchange="onPick('ex3',6,'iii')">iii. Surprising discoveries</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="iv" onchange="onPick('ex3',6,'iv')">iv. The inventiveness of song</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="v" onchange="onPick('ex3',6,'v')">v. Singing effects</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="vi" onchange="onPick('ex3',6,'vi')">vi. Threats to survival</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="vii" onchange="onPick('ex3',6,'vii')">vii. Singing for supper</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="viii" onchange="onPick('ex3',6,'viii')">viii. Varieties of song</label>
+<label class="opt"><input type="radio" name="ex3-q6" value="ix" onchange="onPick('ex3',6,'ix')">ix. The significance of song</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex3')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex3')">Làm lại bài này</button></div>
+<div id="score-ex3"></div><div id="submit-ex3"></div><div id="review-ex3"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex4" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex4" class="card">
+<h2>Exercise 4: Organic food: why?</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Organic food: why?</h3>
+<p><i>by Rob Lyons and Jan Bowman</i></p>
+<p><b>A.</b> Today, many governments are promoting organic or natural farming methods that avoid the use of pesticides and other artificial products. The aim is to show that they care about the environment and about people&#x27;s health. Europe is now the biggest market for organic food in the world, expanding by 25 percent a year over the past 10 years. So what is the attraction of organic food for some people? The really important thing is that organic sounds more &#x27;natural&#x27;. Eating organic is a way of defining oneself as natural, good, caring, different from the junk-food-scoffing masses. As one journalist puts it: &#x27;It feels closer to the source, the beginning, the start of things.&#x27; The real desire is to be somehow close to the soil, to Mother Nature.</p>
+<p><b>B.</b> Unlike conventional farming, the organic approach means farming with natural, rather than man-made, fertilisers and pesticides. Techniques such as crop rotation improve soil quality and help organic farmers compensate for the absence of man-made chemicals. As a method of food production, organic is, however, inefficient in its use of labour and land; there are severe limits to how much food can be produced. Also, the environmental benefits of not using artificial fertiliser are tiny compared with the amount of carbon dioxide emitted by transporting food (a great deal of Britain&#x27;s organic produce is shipped in from other countries and transported from shop to home by car).</p>
+<p><b>C.</b> Organic farming is often claimed to be safer than conventional farming - for the environment and for consumers. Yet studies into organic farming worldwide continue to reject this claim. An extensive review by the UK Food Standards Agency found that there was no statistically significant difference between organic and conventional crops. Even where results indicated there was evidence of a difference, the reviewers found no sign that these differences would have any noticeable effect on health.</p>
+<p><b>D.</b> The simplistic claim that organic food is more nutritious than conventional food was always likely to be misleading. Food is a natural product, and the health value of different foods will vary for a number of reasons, including freshness, the way the food is cooked, the type of soil it is grown in, the amount of sunlight and rain crops have received, and so on. Likewise, the flavour of a carrot has less to do with whether it was fertilised with manure or something out of a plastic sack than with the variety of carrot and how long ago it was dug up. The differences created by these things are likely to be greater than any differences brought about by using an organic or nonorganic system of production. Indeed, even some &#x27;organic&#x27; farms are quite different from one another.</p>
+<p><b>E.</b> The notion that organic food is safer than &#x27;normal&#x27; food is also contradicted by the fact that many of our most common foods are full of natural toxins. Parsnips cause blisters on the skin of agricultural workers. Toasting bread creates carcinogens. As one research expert says: &#x27;People think that the more natural something is, the better it is for them. That is simply not the case. In fact, it is the opposite that is true: the closer a plant is to its natural state, the more likely it is that it will poison you.&#x27; Naturally, many plants do not want to be eaten, so we have spent 10,000 years developing agriculture and breeding out harmful traits from crops.</p>
+<p><b>F.</b> Yet educated Europeans are more scared of eating traces of a few, strictly regulated, man-made chemicals than they are of eating the ones that nature created directly. Surrounded by plentiful food, it&#x27;s not nature they worry about, but technology. Our obsessions with the ethics and safety of what we eat - concerns about antibiotics in animals, additives in food, GM crops and so on - are symptomatic of a highly technological society that has little faith in its ability to use this technology wisely. In this context, the less something is touched by the human hand, the healthier people assume it must be.</p>
+<p><b>G.</b> Ultimately, the organic farming movement is an expensive luxury for shoppers in well-manicured Europe. For developing parts of the world, it is irrelevant. To European environmentalists, the fact that organic methods require more labour and land than conventional ones to get the same yields is a good thing; to a farmer in rural Africa, it is a disaster. Here, land tends to be so starved and crop yields so low that there simply is not enough organic matter to put back into the soil. Perhaps the focus should be on helping these countries to gain access to the most advanced farming techniques, rather than going back to basics.</p>
+<p class="muted">adapted from articles in Spiked</p>
+<p class="muted">Source: Complete IELTS band 5 - 6.5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Questions 1-7: The reading passage has seven paragraphs, A-G. Choose the correct heading for paragraphs B-G from the list of headings below.</i></p>
+<div class="rq"><div class="stem"><b>Câu 1 (ví dụ có sẵn).</b> Paragraph A → Đáp án: <b>viii. The main reason for the popularity of organic food</b></div></div>
+<p><b>List of Headings</b></p><ul>
+<li>i. Research into whether organic food is better for us</li>
+<li>ii. Adding up the cost of organic food</li>
+<li>iii. The factors that can affect food quality</li>
+<li>iv. The rich and poor see things differently</li>
+<li>v. A description of organic farming</li>
+<li>vi. Testing the taste of organic food</li>
+<li>vii. Fear of science has created the organic trend</li>
+<li>viii. The main reason for the popularity of organic food</li>
+<li>ix. The need to remove hidden dangers from food</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 2. Section B</div>
+<label class="opt"><input type="radio" name="ex4-q2" value="i" onchange="onPick('ex4',2,'i')">i. Research into whether organic food is better for us</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="ii" onchange="onPick('ex4',2,'ii')">ii. Adding up the cost of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="iii" onchange="onPick('ex4',2,'iii')">iii. The factors that can affect food quality</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="iv" onchange="onPick('ex4',2,'iv')">iv. The rich and poor see things differently</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="v" onchange="onPick('ex4',2,'v')">v. A description of organic farming</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="vi" onchange="onPick('ex4',2,'vi')">vi. Testing the taste of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="vii" onchange="onPick('ex4',2,'vii')">vii. Fear of science has created the organic trend</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="viii" onchange="onPick('ex4',2,'viii')">viii. The main reason for the popularity of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q2" value="ix" onchange="onPick('ex4',2,'ix')">ix. The need to remove hidden dangers from food</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Section C</div>
+<label class="opt"><input type="radio" name="ex4-q3" value="i" onchange="onPick('ex4',3,'i')">i. Research into whether organic food is better for us</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="ii" onchange="onPick('ex4',3,'ii')">ii. Adding up the cost of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="iii" onchange="onPick('ex4',3,'iii')">iii. The factors that can affect food quality</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="iv" onchange="onPick('ex4',3,'iv')">iv. The rich and poor see things differently</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="v" onchange="onPick('ex4',3,'v')">v. A description of organic farming</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="vi" onchange="onPick('ex4',3,'vi')">vi. Testing the taste of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="vii" onchange="onPick('ex4',3,'vii')">vii. Fear of science has created the organic trend</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="viii" onchange="onPick('ex4',3,'viii')">viii. The main reason for the popularity of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q3" value="ix" onchange="onPick('ex4',3,'ix')">ix. The need to remove hidden dangers from food</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Section D</div>
+<label class="opt"><input type="radio" name="ex4-q4" value="i" onchange="onPick('ex4',4,'i')">i. Research into whether organic food is better for us</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="ii" onchange="onPick('ex4',4,'ii')">ii. Adding up the cost of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="iii" onchange="onPick('ex4',4,'iii')">iii. The factors that can affect food quality</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="iv" onchange="onPick('ex4',4,'iv')">iv. The rich and poor see things differently</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="v" onchange="onPick('ex4',4,'v')">v. A description of organic farming</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="vi" onchange="onPick('ex4',4,'vi')">vi. Testing the taste of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="vii" onchange="onPick('ex4',4,'vii')">vii. Fear of science has created the organic trend</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="viii" onchange="onPick('ex4',4,'viii')">viii. The main reason for the popularity of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q4" value="ix" onchange="onPick('ex4',4,'ix')">ix. The need to remove hidden dangers from food</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 5. Section E</div>
+<label class="opt"><input type="radio" name="ex4-q5" value="i" onchange="onPick('ex4',5,'i')">i. Research into whether organic food is better for us</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="ii" onchange="onPick('ex4',5,'ii')">ii. Adding up the cost of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="iii" onchange="onPick('ex4',5,'iii')">iii. The factors that can affect food quality</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="iv" onchange="onPick('ex4',5,'iv')">iv. The rich and poor see things differently</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="v" onchange="onPick('ex4',5,'v')">v. A description of organic farming</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="vi" onchange="onPick('ex4',5,'vi')">vi. Testing the taste of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="vii" onchange="onPick('ex4',5,'vii')">vii. Fear of science has created the organic trend</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="viii" onchange="onPick('ex4',5,'viii')">viii. The main reason for the popularity of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q5" value="ix" onchange="onPick('ex4',5,'ix')">ix. The need to remove hidden dangers from food</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 6. Section F</div>
+<label class="opt"><input type="radio" name="ex4-q6" value="i" onchange="onPick('ex4',6,'i')">i. Research into whether organic food is better for us</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="ii" onchange="onPick('ex4',6,'ii')">ii. Adding up the cost of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="iii" onchange="onPick('ex4',6,'iii')">iii. The factors that can affect food quality</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="iv" onchange="onPick('ex4',6,'iv')">iv. The rich and poor see things differently</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="v" onchange="onPick('ex4',6,'v')">v. A description of organic farming</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="vi" onchange="onPick('ex4',6,'vi')">vi. Testing the taste of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="vii" onchange="onPick('ex4',6,'vii')">vii. Fear of science has created the organic trend</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="viii" onchange="onPick('ex4',6,'viii')">viii. The main reason for the popularity of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q6" value="ix" onchange="onPick('ex4',6,'ix')">ix. The need to remove hidden dangers from food</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 7. Section G</div>
+<label class="opt"><input type="radio" name="ex4-q7" value="i" onchange="onPick('ex4',7,'i')">i. Research into whether organic food is better for us</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="ii" onchange="onPick('ex4',7,'ii')">ii. Adding up the cost of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="iii" onchange="onPick('ex4',7,'iii')">iii. The factors that can affect food quality</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="iv" onchange="onPick('ex4',7,'iv')">iv. The rich and poor see things differently</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="v" onchange="onPick('ex4',7,'v')">v. A description of organic farming</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="vi" onchange="onPick('ex4',7,'vi')">vi. Testing the taste of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="vii" onchange="onPick('ex4',7,'vii')">vii. Fear of science has created the organic trend</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="viii" onchange="onPick('ex4',7,'viii')">viii. The main reason for the popularity of organic food</label>
+<label class="opt"><input type="radio" name="ex4-q7" value="ix" onchange="onPick('ex4',7,'ix')">ix. The need to remove hidden dangers from food</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex4')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex4')">Làm lại bài này</button></div>
+<div id="score-ex4"></div><div id="submit-ex4"></div><div id="review-ex4"></div>
+</div></div>
+</div></section></div>
+<div id="screen-ex5" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-ex5" class="card">
+<h2>Exercise 5: Learning color words</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Learning color words</h3>
+<p><i>Young children struggle with color concepts, and the reason for this may have something to do with how we use the words that describe them.</i></p>
+<p><b>A.</b> In the course of the first few years of their lives, children who are brought up in English-speaking homes successfully master the use of hundreds of words. Words for objects, actions, emotions, and many other aspects of the physical world quickly become part of their infant repertoire. For some reason, however, when it comes to learning color words, the same children perform very badly. At the age of four months, babies can distinguish between basic color categories. Yet it turns out they do this in much the same way as blind children. &#x27;Blue&#x27; and &#x27;yellow&#x27; appear in older children&#x27;s expressive language in answer to questions such as &#x27;What color is this?&#x27;, but their mapping of objects to individual colors is haphazard and interchangeable. If shown a blue cup and asked about its color, typical two-year-olds seem as likely to come up with &#x27;red&#x27; as &#x27;blue&#x27;. Even after hundreds of training trials, children as old as four may still end up being unable to accurately sort objects by color.</p>
+<p><b>B.</b> In an effort to work out why this is, cognitive scientists at Stanford University in California hypothesized that children&#x27;s incompetence at color-word learning may be directly linked to the way these words are used in English. While word order for color adjectives varies, they are used overwhelmingly in pre-nominal position (e.g. &#x27;blue cup&#x27;); in other words, the adjective comes before the noun it is describing. This is in contrast to post-nominal position (e.g. &#x27;The cup is blue&#x27;) where the adjective comes after the noun. It seems that the difficulty children have may not be caused by any unique property of color, or indeed, of the world. Rather, it may simply come down to the challenge of having to make predictions from color words to the objects they refer to, instead of being able to make predictions from the world of objects to the color words. To illustrate, the word &#x27;chair&#x27; has a meaning that applies to the somewhat varied set of entities in the world that people use for sitting on. Chairs have features, such as arms and legs and backs, that are combined to some degree in a systematic way; they turn up in a range of chairs of different shapes, sizes, and ages. It could be said that children learn to narrow down the set of cues that make up a chair and in this way they learn the concept associated with that word. On the other hand, color words tend to be unique and not bound to other specific co-occurring features; there is nothing systematic about color words to help cue their meaning. In the speech that adults direct at children, color adjectives occur pre-nominally (&#x27;blue cup&#x27;) around 70 percent of the time. This suggests that most of what children hear from adults will, in fact, be unhelpful in learning what color words refer to.</p>
+<p><b>C.</b> To explore this idea further, the research team recruited 41 English children aged between 23 and 29 months and carried out a three-phase experiment. It consisted of a pre-test, followed by training in the use of color words, and finally a post-test that was identical to the pre-test. The pre- and post-test materials comprised six objects that were novel to the children. There were three examples of each object in each of three colors - red, yellow, and blue. The objects were presented on trays, and in both tests, the children were asked to pick out objects in response to requests in which the color word was either a prenominal (&#x27;Which is the red one?&#x27;) or a post-nominal (&#x27;Which one is red?&#x27;). In the training, the children were introduced to a &#x27;magic bucket&#x27; containing five sets of items familiar to 26-month-olds (balls, cups, crayons, glasses, and toy bears) in each of the three colors. The training was set up so that half the children were presented with the items one by one and heard them labelled with color words used pre-nominally (&#x27;This is a red crayon&#x27;), while the other half were introduced to the same items described with a post-nominal color word (&#x27;This crayon is red&#x27;). After the training, the children repeated the selection task on the unknown items in the post-test. To assess the quality of children&#x27;s understanding of the color words, and the effect of each type of training, correct choices on items that were consistent across the pre- and post-tests were used to measure children&#x27;s color knowledge.</p>
+<p><b>D.</b> Individual analysis of pre- and post-test data, which confirmed parental vocabulary reports, showed the children had at least some knowledge of the three colour words: they averaged two out of three correct choices in response to both pre- and post-nominal question types, which, it has been pointed out, is better than chance. When children&#x27;s responses to the question types were assessed independently, performance was at its most consistent when children were both trained and tested on post-nominal adjectives, and worst when trained on pre-nominal adjectives and tested on post-nominal adjectives. Only children who had been trained with post-nominal color-word presentation and then tested with post-nominal question types were significantly more accurate than chance. Comparing the pre- and post-test scores across each condition revealed a significant decline in performance when children were both pre- and post-tested with questions that placed the color words pre-nominally. As predicted, when children are exposed to color adjectives in post-nominal position, they learn them rapidly (after just five training trials per color); when they are presented with them pre-nominally, as English overwhelmingly tends to do, children show no signs of learning.</p>
+<p class="muted">Source: Complete IELTS band 6.5-7.5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>Choose the correct heading for each section from the list of headings below.</i></p>
+<p><b>List of Headings</b></p><ul>
+<li>i. A possible explanation</li>
+<li>ii. Why names of objects are unhelpful</li>
+<li>iii. Checking out the theory</li>
+<li>iv. A curious state of affairs</li>
+<li>v. The need to look at how words are formed</li>
+<li>vi. How age impacts on learning colours</li>
+<li>vii. Some unsurprising data</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 1. Section A</div>
+<label class="opt"><input type="radio" name="ex5-q1" value="i" onchange="onPick('ex5',1,'i')">i. A possible explanation</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="ii" onchange="onPick('ex5',1,'ii')">ii. Why names of objects are unhelpful</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="iii" onchange="onPick('ex5',1,'iii')">iii. Checking out the theory</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="iv" onchange="onPick('ex5',1,'iv')">iv. A curious state of affairs</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="v" onchange="onPick('ex5',1,'v')">v. The need to look at how words are formed</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="vi" onchange="onPick('ex5',1,'vi')">vi. How age impacts on learning colours</label>
+<label class="opt"><input type="radio" name="ex5-q1" value="vii" onchange="onPick('ex5',1,'vii')">vii. Some unsurprising data</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 2. Section B</div>
+<label class="opt"><input type="radio" name="ex5-q2" value="i" onchange="onPick('ex5',2,'i')">i. A possible explanation</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="ii" onchange="onPick('ex5',2,'ii')">ii. Why names of objects are unhelpful</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="iii" onchange="onPick('ex5',2,'iii')">iii. Checking out the theory</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="iv" onchange="onPick('ex5',2,'iv')">iv. A curious state of affairs</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="v" onchange="onPick('ex5',2,'v')">v. The need to look at how words are formed</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="vi" onchange="onPick('ex5',2,'vi')">vi. How age impacts on learning colours</label>
+<label class="opt"><input type="radio" name="ex5-q2" value="vii" onchange="onPick('ex5',2,'vii')">vii. Some unsurprising data</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 3. Section C</div>
+<label class="opt"><input type="radio" name="ex5-q3" value="i" onchange="onPick('ex5',3,'i')">i. A possible explanation</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="ii" onchange="onPick('ex5',3,'ii')">ii. Why names of objects are unhelpful</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="iii" onchange="onPick('ex5',3,'iii')">iii. Checking out the theory</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="iv" onchange="onPick('ex5',3,'iv')">iv. A curious state of affairs</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="v" onchange="onPick('ex5',3,'v')">v. The need to look at how words are formed</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="vi" onchange="onPick('ex5',3,'vi')">vi. How age impacts on learning colours</label>
+<label class="opt"><input type="radio" name="ex5-q3" value="vii" onchange="onPick('ex5',3,'vii')">vii. Some unsurprising data</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 4. Section D</div>
+<label class="opt"><input type="radio" name="ex5-q4" value="i" onchange="onPick('ex5',4,'i')">i. A possible explanation</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="ii" onchange="onPick('ex5',4,'ii')">ii. Why names of objects are unhelpful</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="iii" onchange="onPick('ex5',4,'iii')">iii. Checking out the theory</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="iv" onchange="onPick('ex5',4,'iv')">iv. A curious state of affairs</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="v" onchange="onPick('ex5',4,'v')">v. The need to look at how words are formed</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="vi" onchange="onPick('ex5',4,'vi')">vi. How age impacts on learning colours</label>
+<label class="opt"><input type="radio" name="ex5-q4" value="vii" onchange="onPick('ex5',4,'vii')">vii. Some unsurprising data</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('ex5')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('ex5')">Làm lại bài này</button></div>
+<div id="score-ex5"></div><div id="submit-ex5"></div><div id="review-ex5"></div>
+</div></div>
+</div></section></div>
+<div id="screen-practice" class="screen"><button class="backbtn" onclick="showScreen('hub')">← Về trang tổng</button><section id="sec-practice" class="card">
+<h2>Bài tập thực hành: Gold Dusters</h2>
+<div class="split">
+<div class="panel"><div class="phead">📖 Bài đọc (kéo để đọc hết)</div><div class="pbody">
+<h3 style="margin-top:0">Gold Dusters</h3>
+<p><i>They are the Earth&#x27;s pollinators and they come in more than 200,000 shapes and sizes.</i></p>
+<p><b>A.</b> Row upon row, tomato plants stand in formation inside a greenhouse. To reproduce, most flowering plants depend on a third party to transfer pollen between their male and female parts. Some require extra encouragement to give up that golden dust. The tomato flower, for example, needs a violent shake, a vibration roughly equivalent to 30 times the pull of Earth&#x27;s gravity, explains Arizona entomologist Stephen Buchmann. Growers have tried numerous ways to rattle pollen from tomato blossoms. They have used shaking tables, air blowers and blasts of sound. But natural means seem to work better.</p>
+<p><b>B.</b> It is no surprise that nature&#x27;s design works best. What&#x27;s astonishing is the array of workers that do it: more than 200,000 individual animal species, by varying strategies, help the world&#x27;s 240,000 species of flowering plants make more flowers. Flies and beetles are the original pollinators, going back to when flowering plants first appeared 130 million years ago. As for bees, scientists have identified some 20,000 distinct species so far. Hummingbirds, butterflies, moths, wasps and ants are also up to the job. Even non-flying mammals do their part: sugar-loving opossums, some rainforest monkeys, and lemurs in Madagascar, all with nimble hands that tear open flower stalks and furry coats to which pollen sticks. Most surprising, some lizards, such as geckos, lap up nectar and pollen and then transport the stuff on their faces and feet as they forage onward.</p>
+<p><b>C.</b> All that messy diversity, unfortunately, is not well suited to the monocrops and mega-yields of modern commercial farmers. Before farms got so big, says conservation biologist Claire Kremen of the University of California, Berkeley, &#x27;we didn&#x27;t have to manage pollinators. They were all around because of the diverse landscapes. Now you need to bring in an army to get pollination done. The European honeybee was first imported to the US some 400 years ago.&#x27; Now at least a hundred commercial crops rely almost entirely on managed honeybees, which beekeepers raise and rent out to tend to big farms. And although other species of bees are five to ten times more efficient, on a per-bee basis, at pollinating certain fruits, honeybees have bigger colonies, cover longer distances, and tolerate management and movement better than most insects. They&#x27;re not picky-they&#x27;ll spend their time on almost any crop. It&#x27;s tricky to calculate what their work is truly worth; some economists put it at more than $200 billion globally a year.</p>
+<p><b>D.</b> Industrial-scale farming, however, may be wearing down the system. Honeybees have suffered diseases and parasite infestations for as long as they&#x27;ve been managed, but in 2006 came an extreme blow. Around the world, bees began to disappear over the winter in massive numbers. Beekeepers would lift the lid of a hive and be amazed to find only the queen and a few stragglers, the worker bees gone. In the US, a third to half of all hives crashed; some beekeepers reported colony losses near 90 percent. The mysterious culprit was named colony collapse disorder (CCD) and it remains an annual menace-and an enigma.</p>
+<p><b>E.</b> When it first hit, many people, from agronomists to the public, assumed that our slathering of chemicals on agricultural fields was to blame for the mystery. Indeed, says Jeff Pettis of the USDA Bee Research Laboratory, &#x27;we do find more disease in bees that have been exposed to pesticides, even at low levels.&#x27; But it is likely that CCD involves multiple stressors. Poor nutrition and chemical exposure, for instance, might wear down a bee&#x27;s immunities before a virus finishes the insect off. It&#x27;s hard to tease apart factors and outcomes, Pettis says. New studies reveal that fungicides-not previously thought toxic to bees-can interfere with microbes that break down pollen in the insects&#x27; guts, affecting nutrient absorption and thus long-term health and longevity. Some findings pointed to viral and fungal pathogens working together. &#x27;I only wish we had a single agent causing all the declines&#x27;, Pettis says, &#x27;that would make our work much easier&#x27;.</p>
+<p><b>F.</b> However, habitat loss and alteration, he says, are even more of a menace to pollinators than pathogens. Claire Kremen encourages farmers to cultivate the flora surrounding farmland to help solve habitat problems. &#x27;You can&#x27;t move the farm,&#x27; she says, &#x27;but you can diversify what grows in its vicinity: along roads, even in tractor yards.&#x27; Planting hedgerows and patches of native flowers that bloom at different times and seeding fields with multiple plant species rather than monocrops &#x27;not only is better for native pollinators, but it&#x27;s just better agriculture&#x27;, she says. Pesticide-free wildflower havens, adds Buchmann, would also bolster populations of useful insects. Fortunately, too, &#x27;there are far more generalist plants than specialist plants, so there&#x27;s a lot of redundancy in pollination,&#x27; Buchmann says. &#x27;Even if one pollinator drops out, there are often pretty good surrogates left to do the job. The key to keeping our gardens growing strong, he says, is letting that diversity thrive&#x27;.</p>
+<p><b>G.</b> Take away that variety, and we&#x27;ll lose more than honey. &#x27;We wouldn&#x27;t starve,&#x27; says Kremen. &#x27;But what we eat, and even what we wear-pollinators, after all, give us some of our cotton and flax-would be limited to crops whose pollen travels by other means. &#x27;In a sense,&#x27; she says, &#x27;our lives would be dictated by the wind. It&#x27;s vital that we give pollinators more of what they need and less of what they don&#x27;t, and ease the burden on managed bees by letting native animals do their part&#x27;, say scientists.</p>
+<p class="muted">[Adapted from National Geographic Magazine.]</p>
+<p class="muted">Source: Complete IELTS band 6.5-7.5</p>
+</div></div>
+<div class="panel"><div class="phead">✏️ Câu hỏi</div><div class="pbody">
+<p><i>The reading passage has seven sections, A-G. Choose the correct heading for each section from the list of headings below.</i></p>
+<p class="muted">⚠ Lưu ý: hướng dẫn trong tài liệu gốc ghi &quot;write A-G&quot; nhưng đáp án đúng của dạng Matching Headings là số La Mã i–x (đây là lỗi in của nguồn).</p>
+<p><b>List of Headings</b></p><ul>
+<li>i. Looking for clues</li>
+<li>ii. Blaming the beekeepers</li>
+<li>iii. Solutions to a more troublesome issue</li>
+<li>iv. Discovering a new bee species</li>
+<li>v. An impossible task for any human</li>
+<li>vi. The preferred pollinator</li>
+<li>vii. Plant features designed to suit the pollinator</li>
+<li>viii. Some obvious and less obvious pollen carriers</li>
+<li>ix. The undesirable alternative</li>
+<li>x. An unexpected setback</li>
+</ul>
+<div class="qcard">
+<div class="stem">Câu 15. Section A</div>
+<label class="opt"><input type="radio" name="practice-q15" value="i" onchange="onPick('practice',15,'i')">i. Looking for clues</label>
+<label class="opt"><input type="radio" name="practice-q15" value="ii" onchange="onPick('practice',15,'ii')">ii. Blaming the beekeepers</label>
+<label class="opt"><input type="radio" name="practice-q15" value="iii" onchange="onPick('practice',15,'iii')">iii. Solutions to a more troublesome issue</label>
+<label class="opt"><input type="radio" name="practice-q15" value="iv" onchange="onPick('practice',15,'iv')">iv. Discovering a new bee species</label>
+<label class="opt"><input type="radio" name="practice-q15" value="v" onchange="onPick('practice',15,'v')">v. An impossible task for any human</label>
+<label class="opt"><input type="radio" name="practice-q15" value="vi" onchange="onPick('practice',15,'vi')">vi. The preferred pollinator</label>
+<label class="opt"><input type="radio" name="practice-q15" value="vii" onchange="onPick('practice',15,'vii')">vii. Plant features designed to suit the pollinator</label>
+<label class="opt"><input type="radio" name="practice-q15" value="viii" onchange="onPick('practice',15,'viii')">viii. Some obvious and less obvious pollen carriers</label>
+<label class="opt"><input type="radio" name="practice-q15" value="ix" onchange="onPick('practice',15,'ix')">ix. The undesirable alternative</label>
+<label class="opt"><input type="radio" name="practice-q15" value="x" onchange="onPick('practice',15,'x')">x. An unexpected setback</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 16. Section B</div>
+<label class="opt"><input type="radio" name="practice-q16" value="i" onchange="onPick('practice',16,'i')">i. Looking for clues</label>
+<label class="opt"><input type="radio" name="practice-q16" value="ii" onchange="onPick('practice',16,'ii')">ii. Blaming the beekeepers</label>
+<label class="opt"><input type="radio" name="practice-q16" value="iii" onchange="onPick('practice',16,'iii')">iii. Solutions to a more troublesome issue</label>
+<label class="opt"><input type="radio" name="practice-q16" value="iv" onchange="onPick('practice',16,'iv')">iv. Discovering a new bee species</label>
+<label class="opt"><input type="radio" name="practice-q16" value="v" onchange="onPick('practice',16,'v')">v. An impossible task for any human</label>
+<label class="opt"><input type="radio" name="practice-q16" value="vi" onchange="onPick('practice',16,'vi')">vi. The preferred pollinator</label>
+<label class="opt"><input type="radio" name="practice-q16" value="vii" onchange="onPick('practice',16,'vii')">vii. Plant features designed to suit the pollinator</label>
+<label class="opt"><input type="radio" name="practice-q16" value="viii" onchange="onPick('practice',16,'viii')">viii. Some obvious and less obvious pollen carriers</label>
+<label class="opt"><input type="radio" name="practice-q16" value="ix" onchange="onPick('practice',16,'ix')">ix. The undesirable alternative</label>
+<label class="opt"><input type="radio" name="practice-q16" value="x" onchange="onPick('practice',16,'x')">x. An unexpected setback</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 17. Section C</div>
+<label class="opt"><input type="radio" name="practice-q17" value="i" onchange="onPick('practice',17,'i')">i. Looking for clues</label>
+<label class="opt"><input type="radio" name="practice-q17" value="ii" onchange="onPick('practice',17,'ii')">ii. Blaming the beekeepers</label>
+<label class="opt"><input type="radio" name="practice-q17" value="iii" onchange="onPick('practice',17,'iii')">iii. Solutions to a more troublesome issue</label>
+<label class="opt"><input type="radio" name="practice-q17" value="iv" onchange="onPick('practice',17,'iv')">iv. Discovering a new bee species</label>
+<label class="opt"><input type="radio" name="practice-q17" value="v" onchange="onPick('practice',17,'v')">v. An impossible task for any human</label>
+<label class="opt"><input type="radio" name="practice-q17" value="vi" onchange="onPick('practice',17,'vi')">vi. The preferred pollinator</label>
+<label class="opt"><input type="radio" name="practice-q17" value="vii" onchange="onPick('practice',17,'vii')">vii. Plant features designed to suit the pollinator</label>
+<label class="opt"><input type="radio" name="practice-q17" value="viii" onchange="onPick('practice',17,'viii')">viii. Some obvious and less obvious pollen carriers</label>
+<label class="opt"><input type="radio" name="practice-q17" value="ix" onchange="onPick('practice',17,'ix')">ix. The undesirable alternative</label>
+<label class="opt"><input type="radio" name="practice-q17" value="x" onchange="onPick('practice',17,'x')">x. An unexpected setback</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 18. Section D</div>
+<label class="opt"><input type="radio" name="practice-q18" value="i" onchange="onPick('practice',18,'i')">i. Looking for clues</label>
+<label class="opt"><input type="radio" name="practice-q18" value="ii" onchange="onPick('practice',18,'ii')">ii. Blaming the beekeepers</label>
+<label class="opt"><input type="radio" name="practice-q18" value="iii" onchange="onPick('practice',18,'iii')">iii. Solutions to a more troublesome issue</label>
+<label class="opt"><input type="radio" name="practice-q18" value="iv" onchange="onPick('practice',18,'iv')">iv. Discovering a new bee species</label>
+<label class="opt"><input type="radio" name="practice-q18" value="v" onchange="onPick('practice',18,'v')">v. An impossible task for any human</label>
+<label class="opt"><input type="radio" name="practice-q18" value="vi" onchange="onPick('practice',18,'vi')">vi. The preferred pollinator</label>
+<label class="opt"><input type="radio" name="practice-q18" value="vii" onchange="onPick('practice',18,'vii')">vii. Plant features designed to suit the pollinator</label>
+<label class="opt"><input type="radio" name="practice-q18" value="viii" onchange="onPick('practice',18,'viii')">viii. Some obvious and less obvious pollen carriers</label>
+<label class="opt"><input type="radio" name="practice-q18" value="ix" onchange="onPick('practice',18,'ix')">ix. The undesirable alternative</label>
+<label class="opt"><input type="radio" name="practice-q18" value="x" onchange="onPick('practice',18,'x')">x. An unexpected setback</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 19. Section E</div>
+<label class="opt"><input type="radio" name="practice-q19" value="i" onchange="onPick('practice',19,'i')">i. Looking for clues</label>
+<label class="opt"><input type="radio" name="practice-q19" value="ii" onchange="onPick('practice',19,'ii')">ii. Blaming the beekeepers</label>
+<label class="opt"><input type="radio" name="practice-q19" value="iii" onchange="onPick('practice',19,'iii')">iii. Solutions to a more troublesome issue</label>
+<label class="opt"><input type="radio" name="practice-q19" value="iv" onchange="onPick('practice',19,'iv')">iv. Discovering a new bee species</label>
+<label class="opt"><input type="radio" name="practice-q19" value="v" onchange="onPick('practice',19,'v')">v. An impossible task for any human</label>
+<label class="opt"><input type="radio" name="practice-q19" value="vi" onchange="onPick('practice',19,'vi')">vi. The preferred pollinator</label>
+<label class="opt"><input type="radio" name="practice-q19" value="vii" onchange="onPick('practice',19,'vii')">vii. Plant features designed to suit the pollinator</label>
+<label class="opt"><input type="radio" name="practice-q19" value="viii" onchange="onPick('practice',19,'viii')">viii. Some obvious and less obvious pollen carriers</label>
+<label class="opt"><input type="radio" name="practice-q19" value="ix" onchange="onPick('practice',19,'ix')">ix. The undesirable alternative</label>
+<label class="opt"><input type="radio" name="practice-q19" value="x" onchange="onPick('practice',19,'x')">x. An unexpected setback</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 20. Section F</div>
+<label class="opt"><input type="radio" name="practice-q20" value="i" onchange="onPick('practice',20,'i')">i. Looking for clues</label>
+<label class="opt"><input type="radio" name="practice-q20" value="ii" onchange="onPick('practice',20,'ii')">ii. Blaming the beekeepers</label>
+<label class="opt"><input type="radio" name="practice-q20" value="iii" onchange="onPick('practice',20,'iii')">iii. Solutions to a more troublesome issue</label>
+<label class="opt"><input type="radio" name="practice-q20" value="iv" onchange="onPick('practice',20,'iv')">iv. Discovering a new bee species</label>
+<label class="opt"><input type="radio" name="practice-q20" value="v" onchange="onPick('practice',20,'v')">v. An impossible task for any human</label>
+<label class="opt"><input type="radio" name="practice-q20" value="vi" onchange="onPick('practice',20,'vi')">vi. The preferred pollinator</label>
+<label class="opt"><input type="radio" name="practice-q20" value="vii" onchange="onPick('practice',20,'vii')">vii. Plant features designed to suit the pollinator</label>
+<label class="opt"><input type="radio" name="practice-q20" value="viii" onchange="onPick('practice',20,'viii')">viii. Some obvious and less obvious pollen carriers</label>
+<label class="opt"><input type="radio" name="practice-q20" value="ix" onchange="onPick('practice',20,'ix')">ix. The undesirable alternative</label>
+<label class="opt"><input type="radio" name="practice-q20" value="x" onchange="onPick('practice',20,'x')">x. An unexpected setback</label>
+</div>
+<div class="qcard">
+<div class="stem">Câu 21. Section G</div>
+<label class="opt"><input type="radio" name="practice-q21" value="i" onchange="onPick('practice',21,'i')">i. Looking for clues</label>
+<label class="opt"><input type="radio" name="practice-q21" value="ii" onchange="onPick('practice',21,'ii')">ii. Blaming the beekeepers</label>
+<label class="opt"><input type="radio" name="practice-q21" value="iii" onchange="onPick('practice',21,'iii')">iii. Solutions to a more troublesome issue</label>
+<label class="opt"><input type="radio" name="practice-q21" value="iv" onchange="onPick('practice',21,'iv')">iv. Discovering a new bee species</label>
+<label class="opt"><input type="radio" name="practice-q21" value="v" onchange="onPick('practice',21,'v')">v. An impossible task for any human</label>
+<label class="opt"><input type="radio" name="practice-q21" value="vi" onchange="onPick('practice',21,'vi')">vi. The preferred pollinator</label>
+<label class="opt"><input type="radio" name="practice-q21" value="vii" onchange="onPick('practice',21,'vii')">vii. Plant features designed to suit the pollinator</label>
+<label class="opt"><input type="radio" name="practice-q21" value="viii" onchange="onPick('practice',21,'viii')">viii. Some obvious and less obvious pollen carriers</label>
+<label class="opt"><input type="radio" name="practice-q21" value="ix" onchange="onPick('practice',21,'ix')">ix. The undesirable alternative</label>
+<label class="opt"><input type="radio" name="practice-q21" value="x" onchange="onPick('practice',21,'x')">x. An unexpected setback</label>
+</div>
+<div class="actions"><button class="btn btn-grade" onclick="gradeExercise('practice')">Chấm bài này</button><button class="btn btn-reset" onclick="resetExercise('practice')">Làm lại bài này</button></div>
+<div id="score-practice"></div><div id="submit-practice"></div><div id="review-practice"></div>
+</div></div>
+</div></section></div>
+</main>
+<script>
+const DATA = [{"id": "ex1", "options": ["i. Facing local opposition", "ii. Some reasons for success", "iii. Winners and losers", "iv. A need for change", "v. An experiment that went wrong", "vi. An idea from ancient history", "vii. North America learns from Europe"], "testName": "Matching Headings - ex1 - Pedestrians only", "questions": [{"n": 1, "stem": "Section A", "key": "vi", "evidence": "During the Middle Ages, traffic-free shopping areas known as souks were built in Middle Eastern countries... As far back as 2,000 years ago, road traffic was banned from central Rome during the day to allow for the free movement of pedestrians...", "explain_vi": "Đoạn A kể ý tưởng phố mua sắm không xe cộ đã có từ thời Trung Cổ (chợ souk) và thậm chí 2.000 năm trước ở La Mã cổ đại — tức là \"ý tưởng từ lịch sử cổ đại\". Bẫy vii: Minneapolis được nhắc ở đoạn D nhưng đoạn D nói về số liệu thành công ở châu Âu, không phải \"Bắc Mỹ học theo châu Âu\".", "paraphrase": [["an idea from ancient history", "goes back a long time … As far back as 2,000 years ago"], ["ancient", "the Middle Ages … central Rome"]]}, {"n": 2, "stem": "Section B", "key": "iv", "evidence": "Dirty exhaust fumes from cars and the risks involved in crossing the road were beginning to make shopping an unpleasant and dangerous experience. Many believed the time was right for experimenting with car-free streets...", "explain_vi": "Đoạn B mô tả khói bụi bẩn và nguy hiểm khi sang đường khiến việc mua sắm trở nên khó chịu, nguy hiểm — vì thế \"đã đến lúc\" cần thay đổi bằng phố không xe hơi → \"nhu cầu thay đổi\".", "paraphrase": [["a need for change", "the time was right for experimenting with car-free streets"], ["need", "unpleasant and dangerous experience"]]}, {"n": 3, "stem": "Section C", "key": "i", "evidence": "At first, there was resistance from shopkeepers. They believed that such a move would be bad for business... there were even noisy demonstrations, as many shopkeepers predicted they would lose customers.", "explain_vi": "Đoạn C kể về sự phản đối của các chủ cửa hàng địa phương (cho rằng hại việc kinh doanh, thậm chí biểu tình ồn ào) → \"đối mặt với sự phản đối của địa phương\". Bẫy v: không có thí nghiệm nào \"thất bại\" trong bài.", "paraphrase": [["facing local opposition", "resistance from shopkeepers … noisy demonstrations"], ["local", "shopkeepers"]]}, {"n": 4, "stem": "Section D", "key": "ii", "evidence": "In Munich, Cologne and Hamburg, visitors to shopping areas increased by 50 percent. On Copenhagen's main shopping street, shopkeepers reported sales increases of 25-40 percent.", "explain_vi": "Đoạn D đưa số liệu nghiên cứu: lượng khách tăng 50%, doanh số tăng 25–40% — những con số lý giải vì sao phố không xe thành công → \"một số lý do dẫn đến thành công\".", "paraphrase": [["reasons for success", "visitors … increased by 50 percent … sales increases of 25-40 percent"]]}, {"n": 5, "stem": "Section E", "key": "iii", "evidence": "many shops, especially those selling things like clothes, food and smaller luxury items, prospered. Unfortunately, it wasn't good news for everyone, as shops selling furniture and larger electrical appliances actually saw their sales drop.", "explain_vi": "Đoạn E phân hai nhóm: cửa hàng quần áo, thực phẩm, đồ xa xỉ nhỏ thì phát đạt (winners); cửa hàng nội thất, đồ điện lớn thì doanh số giảm, phải dời đi nơi khác (losers) → \"người thắng và kẻ thua\".", "paraphrase": [["winners", "prospered"], ["losers", "saw their sales drop … forced to move elsewhere"]]}]}, {"id": "ex2", "options": ["i. Making peaceful use of a military weapon", "ii. How modifying the weather has changed the world", "iii. What is prompting this research?", "iv. A period of drought comes to an end", "v. An old solution to a new problem", "vi. Winners and losers", "vii. Tests provide encouraging results", "viii. A waste of money", "ix. Global attempts to change the weather"], "testName": "Matching Headings - ex2 - The rain makers", "questions": [{"n": 1, "stem": "Section A", "key": "iv", "evidence": "Within twenty minutes, the farms around the eastern Chinese city of Luohe are experiencing their first rain for many weeks. Gang Liu's valuable wheat has been saved, thanks to a technique known as 'cloud seeding'...", "explain_vi": "Đoạn A kể người nông dân lo lắng vì hạn hán, rồi tên lửa bắn vào mây và \"cơn mưa đầu tiên sau nhiều tuần\" đã đến, cứu được vụ lúa mì → \"giai đoạn hạn hán kết thúc\". Bẫy v: cloud seeding là kỹ thuật hiện đại, không phải \"giải pháp cũ\".", "paraphrase": [["a period of drought comes to an end", "their first rain for many weeks … has been saved"], ["drought", "The annual rains have not arrived"]]}, {"n": 2, "stem": "Section B", "key": "ix", "evidence": "There are currently 150 weather-modifying projects taking place in more than 40 countries. Not all of them are aimed at creating rain. The Eastlund Scientific Enterprises Corporation in the USA, for example, is experimenting with firing microwaves into clouds to prevent the tornadoes... In Russia, experiments have been carried out to make sure the sun shines during important national events.", "explain_vi": "Đoạn B liệt kê các nỗ lực trên toàn cầu: 150 dự án ở hơn 40 nước, Mỹ thử nghiệm chống lốc xoáy, Nga thử nghiệm tạo nắng → \"những nỗ lực toàn cầu nhằm thay đổi thời tiết\".", "paraphrase": [["global attempts to change the weather", "150 weather-modifying projects … in more than 40 countries"]]}, {"n": 3, "stem": "Section C", "key": "vii", "evidence": "researchers are using trials in which some clouds are 'seeded' while others are not, and both groups are monitored... What Huggins' team has discovered so far is promising. They believe that cloud seeding does work...", "explain_vi": "Đoạn C mô tả các thử nghiệm so sánh mây được \"gieo hạt\" và không, với kết quả \"đầy hứa hẹn\" (promising), nhóm nghiên cứu tin rằng cloud seeding có hiệu quả → \"các thử nghiệm cho kết quả khích lệ\".", "paraphrase": [["tests provide encouraging results", "trials … What Huggins' team has discovered so far is promising"]]}, {"n": 4, "stem": "Section D", "key": "i", "evidence": "weather-modification authorities use army rockets to fire silver-iodide particles into the clouds. 59,000 staff working for the China Meteorological Administration (CMA) are equipped with 7,115 army cannons...", "explain_vi": "Đoạn D: Trung Quốc dùng tên lửa quân đội và 7.115 khẩu pháo quân đội để bắn hạt bạc vào mây tạo mưa — vũ khí quân sự được dùng cho mục đích hòa bình (nông nghiệp) → \"sử dụng vũ khí quân sự vào mục đích hòa bình\".", "paraphrase": [["making peaceful use of a military weapon", "use army rockets … army cannons … to fire silver-iodide particles into the clouds"]]}, {"n": 5, "stem": "Section E", "key": "iii", "evidence": "\"But there is a more powerful economic reason. A lot of countries around the world are at risk from drought, and governments will try anything to make sure that doesn't happen, even if the scientific evidence is weak. The potential economic value is greater than the scientific value.\"", "explain_vi": "Đoạn E trả lời câu hỏi vì sao đầu tư nhiều tiền của, công sức vào nghiên cứu: nguy cơ hạn hán toàn cầu và giá trị kinh tế to lớn → \"điều gì đang thúc đẩy nghiên cứu này?\". Bẫy viii: bài không nói đây là lãng phí tiền — CMA còn khẳng định \"đáng tiền\" (worth the expense).", "paraphrase": [["what is prompting this research?", "why so much time, effort and money are being invested … economic reason"]]}, {"n": 6, "stem": "Section F", "key": "vi", "evidence": "Some people think that diverting water for irrigation benefits some people, but is a disadvantage to others. Someone in one area will get more water, but as a result, someone somewhere else could get less... 'rain rage'.", "explain_vi": "Đoạn F nêu mặt trái: chuyển hướng nước tưới có lợi cho người này nhưng thiệt cho người khác (thị trấn này \"ăn cắp\" mưa của thị trấn kia) → có người được, người mất → \"người thắng và kẻ thua\".", "paraphrase": [["winners and losers", "benefits some people, but is a disadvantage to others … someone … could get less"]]}]}, {"id": "ex3", "options": ["i. Musical futures", "ii. Sad mystery to solve", "iii. Surprising discoveries", "iv. The inventiveness of song", "v. Singing effects", "vi. Threats to survival", "vii. Singing for supper", "viii. Varieties of song", "ix. The significance of song"], "testName": "Matching Headings - ex3 - Whale communication", "questions": [{"n": 1, "stem": "Section A", "key": "iii", "evidence": "During the Cold War, a Bermudian, Frank Watlington was working for the US government, and it was his job to use hydrophones to listen out for Russian submarines. While he was doing this, Watlington noticed that humpback whales appeared to 'sing'.", "explain_vi": "Đoạn A kể việc phát hiện ra cá voi \"hát\": Watlington đang dùng thiết bị nghe lén tàu ngầm Nga thì tình cờ nhận ra tiếng hát của cá voi lưng gù — một phát hiện đầy bất ngờ → \"những phát hiện gây ngạc nhiên\".", "paraphrase": [["surprising discoveries", "noticed that humpback whales appeared to 'sing' (while listening for submarines)"]]}, {"n": 2, "stem": "Section B", "key": "ix", "evidence": "Scientists believe there are two main reasons for whales to make sounds: echolocation, so that the whales know what objects (and perhaps food) are around them; and communication.", "explain_vi": "Đoạn B nêu hai lý do chính khiến cá voi phát ra âm thanh (định vị bằng tiếng vang và giao tiếp) — tức là tầm quan trọng/ý nghĩa của tiếng hát → \"ý nghĩa của tiếng hát\".", "paraphrase": [["the significance of song", "two main reasons for whales to make sounds"]]}, {"n": 3, "stem": "Section C", "key": "vii", "evidence": "Some whales look for food, such as squid, down to a depth of 1.5 kilometres, and at that depth there is virtually no light at all... The whales send out series of clicks and listen out for the echo of the sound.", "explain_vi": "Đoạn C giải thích cá voi dùng chuỗi tiếng click để định vị thức ăn (mực) ở độ sâu 1,5 km tối đen — dùng âm thanh để kiếm bữa ăn → \"hát để kiếm ăn\" (singing for supper).", "paraphrase": [["singing for supper", "look for food … send out series of clicks and listen out for the echo"]]}, {"n": 4, "stem": "Section D", "key": "viii", "evidence": "Humpback whales in one school... tend to sing virtually the same song... Other schools, particularly those found in other oceans, sing songs which are quite different. It is also quite likely that the songs play a role in courtship.", "explain_vi": "Đoạn D nói về sự đa dạng của các bài hát: cùng một đàn thì hát giống nhau (thể hiện bản sắc nhóm), các đàn ở đại dương khác thì hát khác hẳn, và có thể dùng trong tán tỉnh → \"sự đa dạng của các bài hát\". Bẫy iv: bài không nói về \"sự sáng tạo\" trong cách hát.", "paraphrase": [["varieties of song", "sing virtually the same song … sing songs which are quite different"]]}, {"n": 5, "stem": "Section E", "key": "vi", "evidence": "In the 1930s, over 50,000 whales were killed annually... large numbers of northern right whales are killed in collision with ships... The loud noises of ships' engines are very likely to disturb the whales...", "explain_vi": "Đoạn E liệt kê các mối đe dọa: săn bắt (50.000 con/năm thập niên 1930), đâm vào tàu, tiếng ồn động cơ tàu → \"những mối đe dọa đối với sự sinh tồn\".", "paraphrase": [["threats to survival", "50,000 whales were killed annually … killed in collision with ships"]]}, {"n": 6, "stem": "Section F", "key": "ii", "evidence": "In recent years, there have been many cases of whales dying on beaches. Could the reason for these tragedies have something to do with the noise pollution...? There is no definite answer to the question...", "explain_vi": "Đoạn F đặt câu hỏi buồn chưa có lời giải: vì sao nhiều cá voi chết dạt vào bờ — có liên quan đến ô nhiễm tiếng ồn? \"Chưa có câu trả lời chắc chắn\" → \"bí ẩn buồn cần giải đáp\".", "paraphrase": [["sad mystery to solve", "many cases of whales dying on beaches … There is no definite answer"]]}]}, {"id": "ex4", "options": ["i. Research into whether organic food is better for us", "ii. Adding up the cost of organic food", "iii. The factors that can affect food quality", "iv. The rich and poor see things differently", "v. A description of organic farming", "vi. Testing the taste of organic food", "vii. Fear of science has created the organic trend", "viii. The main reason for the popularity of organic food", "ix. The need to remove hidden dangers from food"], "testName": "Matching Headings - ex4 - Organic food: why?", "questions": [{"n": 2, "stem": "Section B", "key": "v", "evidence": "Unlike conventional farming, the organic approach means farming with natural, rather than man-made, fertilisers and pesticides. Techniques such as crop rotation improve soil quality and help organic farmers compensate for the absence of man-made chemicals.", "explain_vi": "Đoạn B mô tả phương pháp canh tác hữu cơ (phân bón/thuốc trừ sâu tự nhiên, luân canh cải tạo đất) và hiệu quả của nó → \"mô tả về canh tác hữu cơ\".", "paraphrase": [["a description of organic farming", "the organic approach means farming with natural, rather than man-made, fertilisers and pesticides"]]}, {"n": 3, "stem": "Section C", "key": "i", "evidence": "Yet studies into organic farming worldwide continue to reject this claim. An extensive review by the UK Food Standards Agency found that there was no statistically significant difference between organic and conventional crops.", "explain_vi": "Đoạn C trích các nghiên cứu (đánh giá của Cơ quan Tiêu chuẩn Thực phẩm Anh) bác bỏ tuyên bố \"hữu cơ an toàn hơn\" → \"nghiên cứu về việc thực phẩm hữu cơ có tốt hơn cho chúng ta không\". Bẫy vi: bài không hề \"nếm thử\" gì cả.", "paraphrase": [["research into whether organic food is better for us", "studies into organic farming worldwide … An extensive review … found that there was no statistically significant difference"]]}, {"n": 4, "stem": "Section D", "key": "iii", "evidence": "the health value of different foods will vary for a number of reasons, including freshness, the way the food is cooked, the type of soil it is grown in, the amount of sunlight and rain crops have received, and so on.", "explain_vi": "Đoạn D liệt kê các yếu tố quyết định giá trị dinh dưỡng/hương vị thực phẩm (độ tươi, cách nấu, loại đất, nắng mưa…) chứ không phải hữu cơ hay không → \"các yếu tố có thể ảnh hưởng đến chất lượng thực phẩm\".", "paraphrase": [["the factors that can affect food quality", "the health value of different foods will vary for a number of reasons, including freshness…"]]}, {"n": 5, "stem": "Section E", "key": "ix", "evidence": "many of our most common foods are full of natural toxins. Parsnips cause blisters on the skin of agricultural workers. Toasting bread creates carcinogens... 'the closer a plant is to its natural state, the more likely it is that it will poison you.'", "explain_vi": "Đoạn E chỉ ra nhiều thực phẩm quen thuộc chứa độc tố tự nhiên (củ cải vàng gây phồng rộp, bánh mì nướng tạo chất gây ung thư) và con người đã mất 10.000 năm lai tạo để loại bỏ đặc tính có hại → \"nhu cầu loại bỏ những nguy hiểm tiềm ẩn trong thực phẩm\".", "paraphrase": [["the need to remove hidden dangers from food", "full of natural toxins … breeding out harmful traits from crops"]]}, {"n": 6, "stem": "Section F", "key": "vii", "evidence": "educated Europeans are more scared of eating traces of a few, strictly regulated, man-made chemicals than they are of eating the ones that nature created directly... it's not nature they worry about, but technology.", "explain_vi": "Đoạn F: người châu Âu có học lại sợ hóa chất nhân tạo (dù được kiểm soát chặt) hơn chất độc từ tự nhiên; họ lo công nghệ chứ không lo thiên nhiên → nỗi sợ khoa học đã tạo ra xu hướng hữu cơ.", "paraphrase": [["fear of science has created the organic trend", "more scared of … man-made chemicals … it's not nature they worry about, but technology"]]}, {"n": 7, "stem": "Section G", "key": "iv", "evidence": "the organic farming movement is an expensive luxury for shoppers in well-manicured Europe. For developing parts of the world, it is irrelevant... to a farmer in rural Africa, it is a disaster.", "explain_vi": "Đoạn G đối lập hai góc nhìn: với người châu Âu giàu có, hữu cơ là \"món xa xỉ đắt đỏ\" đáng hoan nghênh; với nông dân châu Phi nghèo, nó là \"thảm họa\" → người giàu và người nghèo nhìn nhận khác nhau. Bẫy ii: bài không \"cộng sổ chi phí\" cụ thể.", "paraphrase": [["the rich and poor see things differently", "an expensive luxury for shoppers in well-manicured Europe … to a farmer in rural Africa, it is a disaster"]]}]}, {"id": "ex5", "options": ["i. A possible explanation", "ii. Why names of objects are unhelpful", "iii. Checking out the theory", "iv. A curious state of affairs", "v. The need to look at how words are formed", "vi. How age impacts on learning colours", "vii. Some unsurprising data"], "testName": "Matching Headings - ex5 - Learning color words", "questions": [{"n": 1, "stem": "Section A", "key": "iv", "evidence": "Words for objects, actions, emotions, and many other aspects of the physical world quickly become part of their infant repertoire. For some reason, however, when it comes to learning color words, the same children perform very badly.", "explain_vi": "Đoạn A nêu nghịch lý lạ lùng: trẻ học hàng trăm từ chỉ đồ vật, hành động, cảm xúc rất nhanh, nhưng riêng từ chỉ màu sắc thì \"học rất tệ\" (perform very badly) dù mới 4 tháng tuổi đã phân biệt được màu → \"một tình trạng kỳ lạ đáng tò mò\".", "paraphrase": [["a curious state of affairs", "For some reason, however, when it comes to learning color words, the same children perform very badly"]]}, {"n": 2, "stem": "Section B", "key": "i", "evidence": "cognitive scientists at Stanford University in California hypothesized that children's incompetence at color-word learning may be directly linked to the way these words are used in English.", "explain_vi": "Đoạn B đưa ra giả thuyết của các nhà khoa học Stanford: khó khăn của trẻ có thể liên quan trực tiếp đến cách từ màu được dùng trong tiếng Anh (trước danh từ) → \"một lời giải thích khả dĩ\".", "paraphrase": [["a possible explanation", "hypothesized that children's incompetence … may be directly linked to the way these words are used"]]}, {"n": 3, "stem": "Section C", "key": "iii", "evidence": "the research team recruited 41 English children aged between 23 and 29 months and carried out a three-phase experiment. It consisted of a pre-test, followed by training in the use of color words, and finally a post-test that was identical to the pre-test.", "explain_vi": "Đoạn C mô tả thí nghiệm 3 giai đoạn (pre-test, huấn luyện, post-test) với 41 trẻ để kiểm chứng giả thuyết → \"kiểm chứng giả thuyết\".", "paraphrase": [["checking out the theory", "carried out a three-phase experiment … To explore this idea further"]]}, {"n": 4, "stem": "Section D", "key": "vii", "evidence": "performance was at its most consistent when children were both trained and tested on post-nominal adjectives... As predicted, when children are exposed to color adjectives in post-nominal position, they learn them rapidly (after just five training trials per color)...", "explain_vi": "Đoạn D trình bày kết quả đúng như dự đoán (\"As predicted\"): trẻ học nhanh khi tiếp xúc tính từ sau danh từ, và không học được gì khi tiếp xúc trước danh từ → dữ liệu \"không gây ngạc nhiên\" vì khớp giả thuyết. Bẫy vi: bài không so sánh ảnh hưởng của độ tuổi.", "paraphrase": [["some unsurprising data", "As predicted … Individual analysis of pre- and post-test data … showed"]]}]}, {"id": "practice", "options": ["i. Looking for clues", "ii. Blaming the beekeepers", "iii. Solutions to a more troublesome issue", "iv. Discovering a new bee species", "v. An impossible task for any human", "vi. The preferred pollinator", "vii. Plant features designed to suit the pollinator", "viii. Some obvious and less obvious pollen carriers", "ix. The undesirable alternative", "x. An unexpected setback"], "testName": "Matching Headings - practice - Gold Dusters", "questions": [{"n": 15, "stem": "Section A", "key": "v", "evidence": "The tomato flower, for example, needs a violent shake, a vibration roughly equivalent to 30 times the pull of Earth's gravity… Growers have tried numerous ways to rattle pollen from tomato blossoms. They have used shaking tables, air blowers and blasts of sound. But natural means seem to work better.", "explain_vi": "Đoạn A nhấn mạnh việc lấy phấn khỏi hoa cà chua đòi hỏi cú rung cực mạnh (gấp 30 lần trọng lực Trái Đất); con người đã thử đủ cách nhân tạo (bàn rung, máy thổi, sóng âm) nhưng phương tiện tự nhiên vẫn hiệu quả hơn → với con người, đây gần như là \"nhiệm vụ bất khả thi\".", "paraphrase": [["an impossible task for any human", "needs a violent shake… 30 times the pull of Earth's gravity"], ["natural means seem to work better", "mọi cách nhân tạo của con người đều kém hiệu quả hơn"]]}, {"n": 16, "stem": "Section B", "key": "viii", "evidence": "What's astonishing is the array of workers that do it: more than 200,000 individual animal species… Flies and beetles are the original pollinators… some 20,000 distinct species [of bees]… Hummingbirds, butterflies, moths, wasps and ants… Most surprising, some lizards, such as geckos, lap up nectar and pollen…", "explain_vi": "Đoạn B liệt kê đủ loại sinh vật thụ phấn — từ những loài hiển nhiên (ong, bướm, chim ruồi) đến những loài ít ai ngờ tới (thú có túi, vượn cáo, thằn lằn tắc kè) → \"những loài mang phấn hoa hiển nhiên và ít hiển nhiên\".", "paraphrase": [["some obvious and less obvious pollen carriers", "the array of workers… Flies and beetles… bees… hummingbirds… Most surprising, some lizards"]]}, {"n": 17, "stem": "Section C", "key": "vi", "evidence": "Now at least a hundred commercial crops rely almost entirely on managed honeybees, which beekeepers raise and rent out to tend to big farms… honeybees have bigger colonies, cover longer distances, and tolerate management and movement better than most insects.", "explain_vi": "Đoạn C giải thích vì sao ong mật châu Âu được nông nghiệp thương mại \"ưa chuộng\": ít nhất 100 loại cây trồng phụ thuộc gần như hoàn toàn vào ong mật nuôi — vì đàn lớn, bay xa, dễ quản lý và di chuyển → \"loài thụ phấn được ưa chuộng\".", "paraphrase": [["the preferred pollinator", "rely almost entirely on managed honeybees"], ["preferred", "bigger colonies, cover longer distances, and tolerate management and movement better"]]}, {"n": 18, "stem": "Section D", "key": "x", "evidence": "but in 2006 came an extreme blow. Around the world, bees began to disappear over the winter in massive numbers… In the US, a third to half of all hives crashed… The mysterious culprit was named colony collapse disorder (CCD) and it remains an annual menace-and an enigma.", "explain_vi": "Đoạn D kể về cú sốc bất ngờ năm 2006: ong biến mất hàng loạt vào mùa đông, hội chứng sụp đổ đàn ong (CCD) bí ẩn và vẫn là mối đe dọa hằng năm → \"một trở ngại bất ngờ\".", "paraphrase": [["an unexpected setback", "in 2006 came an extreme blow"], ["setback", "a third to half of all hives crashed… remains an annual menace"]]}, {"n": 19, "stem": "Section E", "key": "i", "evidence": "When it first hit, many people… assumed that our slathering of chemicals on agricultural fields was to blame for the mystery… But it is likely that CCD involves multiple stressors… 'I only wish we had a single agent causing all the declines', Pettis says, 'that would make our work much easier'.", "explain_vi": "Đoạn E mô tả quá trình các nhà khoa học truy tìm nguyên nhân CCD: ban đầu nghi thuốc trừ sâu, rồi phát hiện nhiều yếu tố chồng chéo (dinh dưỡng kém, nấm, virus) mà chưa tách bạch được → \"tìm kiếm manh mối\".", "paraphrase": [["looking for clues", "assumed… was to blame for the mystery"], ["clues", "likely that CCD involves multiple stressors… hard to tease apart factors"]]}, {"n": 20, "stem": "Section F", "key": "iii", "evidence": "However, habitat loss and alteration, he says, are even more of a menace to pollinators than pathogens. Claire Kremen encourages farmers to cultivate the flora surrounding farmland to help solve habitat problems… Planting hedgerows and patches of native flowers… 'not only is better for native pollinators, but it's just better agriculture'.", "explain_vi": "Đoạn F chỉ ra vấn đề còn rắc rối hơn cả mầm bệnh là mất môi trường sống, rồi đưa ra các giải pháp (trồng hàng rào cây, hoa dại, đa dạng hóa cây trồng) → \"giải pháp cho một vấn đề rắc rối hơn\".", "paraphrase": [["a more troublesome issue", "habitat loss and alteration… even more of a menace… than pathogens"], ["solutions", "encourages farmers to cultivate the flora… to help solve habitat problems"]]}, {"n": 21, "stem": "Section G", "key": "ix", "evidence": "Take away that variety, and we'll lose more than honey… 'But what we eat, and even what we wear… would be limited to crops whose pollen travels by other means.' 'In a sense,' she says, 'our lives would be dictated by the wind.'", "explain_vi": "Đoạn G vẽ viễn cảnh nếu mất đi sự đa dạng loài thụ phấn: những gì ta ăn, ta mặc sẽ bị giới hạn ở các cây thụ phấn nhờ phương tiện khác, \"cuộc sống của chúng ta sẽ bị gió chi phối\" → một \"lựa chọn thay thế không mong muốn\".", "paraphrase": [["the undesirable alternative", "would be limited to crops whose pollen travels by other means"], ["alternative", "our lives would be dictated by the wind"]]}]}];
+const SUBMIT_CFG = {"endpoint": "https://script.google.com/macros/s/AKfycbzCX-jRyn28wS8lEQ-wtdM8qspFr-Ptj1c2r3ctxpi3hseVZ1UMBE8N4jXAx1-03pLn/exec", "unit": "IELTS-READING-MATCHING-HEADINGS"};
+const state = {};
+DATA.forEach(ex=>{state[ex.id]={answers:{},graded:false,attempt:0,attemptId:null,submittedAttemptIds:[],submitState:'idle',results:{},score:0,total:0,correct:0,wrong:0};});
+function studentVal(id){const el=document.getElementById(id);return el?el.value.trim():'';}
+function studentFormHTML(){
+  return '<div class="studentform"><h3>Thông tin học sinh (để gửi kết quả cho cô)</h3>'
+  +'<div class="sfields">'
+  +'<label>Họ và tên <span class="req">*</span><input id="studentName" autocomplete="name" placeholder="Nhập họ và tên"></label>'
+  +'<label>Lớp<input id="studentClass" placeholder="VD: 12A1"></label>'
+  +'<label>Mã HS<input id="studentId" placeholder="Mã học sinh"></label>'
+  +'</div><p class="muted">Kết quả chỉ được gửi về cho cô khi đã nhập họ tên.</p></div>';
+}
+function letterOf(opt){var m=opt.trim().match(/^([ivxlcdm]+)\./i);return m?m[1].toLowerCase():opt.trim().charAt(0);}
+function fullLabel(exId,l){const ex=DATA.find(e=>e.id===exId);const o=ex.options.find(o=>letterOf(o)===l);return o||l;}
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-'+id).classList.add('active');
+  window.scrollTo(0,0);
+  if(id==='hub')updateHub();
+}
+function updateHub(){
+  DATA.forEach(ex=>{
+    const st=state[ex.id];const el=document.getElementById('status-'+ex.id);if(!el)return;
+    const answered=Object.keys(st.answers).length;
+    if(st.graded){el.textContent='Đã chấm: '+st.score+'/'+st.total;el.className='status done';}
+    else if(answered>0){el.textContent='Đang làm: '+answered+'/'+ex.questions.length+' câu';el.className='status doing';}
+    else{el.textContent='Chưa làm';el.className='status';}
+  });
+}
+function onPick(exId,qn,val){state[exId].answers[qn]=val;state[exId].graded=false;state[exId].submitState='idle';
+  document.getElementById('review-'+exId).innerHTML='';document.getElementById('score-'+exId).innerHTML='';
+  const sb=document.getElementById('submit-'+exId);if(sb)sb.innerHTML='';updateHub();}
+function gradeExercise(exId){
+  const ex=DATA.find(e=>e.id===exId),st=state[exId];let correct=0;const total=ex.questions.length;
+  let h='';
+  ex.questions.forEach(q=>{
+    const ua=st.answers[q.n]||'';
+    const ok=ua===q.key; if(ok)correct++;
+    h+='<div class="rq '+(ok?'correct':'wrong')+'">';
+    h+='<div class="stem"><b>Câu '+q.n+'.</b> '+esc(q.stem)+'</div>';
+    h+='<div class="ansline">'+(ok?'✅ Đúng':'❌ Sai')+' — Bạn chọn: <b>'+(ua?esc(fullLabel(exId,ua)):'<i>(chưa trả lời)</i>')+'</b> · Đáp án đúng: <b>'+esc(fullLabel(exId,q.key))+'</b></div>';
+    h+='<div class="evidence">Evidence (nguyên văn bài đọc): “'+esc(q.evidence)+'”</div>';
+    h+='<div class="explain"><b>Giải thích:</b> '+esc(q.explain_vi)+'</div>';
+    if(q.paraphrase&&q.paraphrase.length){h+='<div><b>Đối chiếu paraphrase:</b><ul class="paralist">'+q.paraphrase.map(p=>'<li>“'+esc(p[0])+'” ↔ “'+esc(p[1])+'”</li>').join('')+'</ul></div>';}
+    h+='</div>';
+  });
+  document.getElementById('review-'+exId).innerHTML='<div class="review">'+h+'</div>';
+  document.getElementById('score-'+exId).innerHTML='<div class="score">Điểm bài này: '+correct+'/'+total+'</div>';
+  st.graded=true;st.score=correct;st.total=total;st.correct=correct;st.wrong=total-correct;
+  st.attempt=(st.attempt||0)+1;
+  st.attemptId=SUBMIT_CFG.unit+'-'+exId+'-'+Date.now()+'-'+Math.random().toString(36).slice(2,7);
+  st.results={};
+  ex.questions.forEach(q=>{const ua=st.answers[q.n]||'';st.results[q.n]={student:ua,correct:q.key,isCorrect:ua===q.key};});
+  window.scrollTo({top:0,behavior:'smooth'});
+  updateHub();
+  submitResult(exId);
+  return {correct,total};
+}
+function submitResult(exId){
+  const ex=DATA.find(e=>e.id===exId),st=state[exId];
+  if(!st||!st.graded||!st.attemptId)return;
+  if((st.submittedAttemptIds||[]).indexOf(st.attemptId)>=0){st.submitState='sent';renderSubmitStatus(exId);return;}
+  if(!studentVal('studentName')){st.submitState='no-name';renderSubmitStatus(exId);return;}
+  st.submitState='sending';renderSubmitStatus(exId);
+  const unanswered=ex.questions.filter(q=>!(st.answers[q.n]||'')).length;
+  const payload={studentName:studentVal('studentName'),studentClass:studentVal('studentClass'),studentId:studentVal('studentId'),
+    testId:SUBMIT_CFG.unit+'-'+exId,testName:ex.testName||exId,
+    score:st.score,total:st.total,duration:'',correct:st.correct,wrong:st.wrong,
+    answers:Object.assign({meta:{attempt:st.attempt,attemptId:st.attemptId,lessonId:SUBMIT_CFG.unit,exerciseId:exId,submittedAt:new Date().toISOString(),unanswered:unanswered}},st.results)};
+  fetch(SUBMIT_CFG.endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}).then(()=>{
+    if(st.attemptId&&st.submittedAttemptIds.indexOf(st.attemptId)<0)st.submittedAttemptIds.push(st.attemptId);
+    st.submitState='sent';renderSubmitStatus(exId);
+  }).catch(()=>{st.submitState='failed';renderSubmitStatus(exId);});
+}
+function resendResult(exId){submitResult(exId);}
+function renderSubmitStatus(exId){
+  const st=state[exId];const box=document.getElementById('submit-'+exId);if(!box||!st)return;
+  let h='';
+  if(st.submitState==='sending')h='<div class="submitting">Đang gửi kết quả...</div>';
+  else if(st.submitState==='sent')h='<div class="submited">✓ Đã gửi kết quả</div>';
+  else if(st.submitState==='failed')h='<div class="submitfail">⚠ Không gửi được kết quả (kiểm tra mạng)</div><button class="btn btn-resend" onclick="resendResult(\''+exId+'\')">Gửi lại kết quả</button>';
+  else if(st.submitState==='no-name')h='<div class="submitwarn">Vui lòng nhập họ tên ở trang tổng để gửi kết quả cho cô.</div><button class="btn btn-resend" onclick="resendResult(\''+exId+'\')">Gửi lại kết quả</button>';
+  box.innerHTML=h;
+}
+function resetExercise(exId){
+  state[exId]={answers:{},graded:false,attempt:0,attemptId:null,submittedAttemptIds:[],submitState:'idle',results:{},score:0,total:0,correct:0,wrong:0};
+  document.querySelectorAll('#sec-'+exId+' input[type=radio]').forEach(r=>{r.checked=false;});
+  document.getElementById('review-'+exId).innerHTML='';document.getElementById('score-'+exId).innerHTML='';
+  const sb=document.getElementById('submit-'+exId);if(sb)sb.innerHTML='';
+  const ts=document.getElementById('totalscore');if(ts)ts.innerHTML='';
+  updateHub();
+}
+function gradeAll(){
+  let c=0,t=0;
+  DATA.forEach(ex=>{const r=gradeExercise(ex.id);c+=r.correct;t+=r.total;});
+  document.getElementById('totalscore').innerHTML='<div class="totalscore">TỔNG ĐIỂM CÁC BÀI TẬP: '+c+'/'+t+'</div>';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function resetAll(){DATA.forEach(ex=>resetExercise(ex.id));updateHub();}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+document.addEventListener('DOMContentLoaded',function(){const sf=document.getElementById('studentform');if(sf)sf.innerHTML=studentFormHTML();updateHub();});
+</script></body></html>
